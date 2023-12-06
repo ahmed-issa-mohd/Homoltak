@@ -2,41 +2,60 @@
   left: 15px;
   z-index: 5;
 }
+
 .slick-next {
   right: 15px;
   z-index: 5;
 }
 
-.showcase-slider {
-  max-width: 100%;
+.showcase {
+  position: relative;
+  direction: ltr;
 }
 
-.item {
-  height: 540px;
+.showcase .content {
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  z-index: 5;
+  transform: translate(50%, 50%);
+  text-align: center;
+  direction: rtl;
 }
 
-.showcase-slider .item-1 {
-  background: url(img/truck1.jpg) no-repeat;
-  background-size: cover;
-  object-fit: cover;
+.showcase .content h1 {
+  font-size: 55px;
+  font-weight: bold;
+  color: var(--primary-color);
 }
+
+.content h1 span {
+  color: var(--secondary-color);
+}
+
+.showcase .content p {
+  color: #eee;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .showcase-slider .item {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  height: 80vh;
+
 }
+
+.showcase-slider .item-1 {
+  background: url(img/truck1.jpg) no-repeat left top/cover;
+}
+
 .showcase-slider .item-2 {
-  background: rgb(20, 42, 0);
-  color: #fff;
-  background: url(img/truck2.jpg) no-repeat;
-  background-size: cover;
-  object-fit: cover;
-  background-position: center;
+  background: url(img/truck2.jpg) no-repeat center/cover;
 }
+
 .showcase-slider .item-3 {
-  background: darkcyan;
-  background: url(img/t4.jpg) no-repeat;
-  background-size: cover;
-  object-fit: cover;
+  background: url(img/t4.jpg) no-repeat left top/cover;
 }

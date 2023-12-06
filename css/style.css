@@ -1,19 +1,33 @@
+:root {
+  --primary-color: #008686;
+  --secondary-color: #e8491d;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
+
+body {
+  direction: rtl;
+}
+
 .container {
   max-width: 80%;
   margin: auto;
   overflow: hidden;
 }
+
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
+
 body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
@@ -21,17 +35,22 @@ body {
 
 /* Header */
 
+header {
+  border-bottom: 3px solid var(--primary-color)
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 90px;
+  min-height: 70px;
 }
 
 #branding {
   color: #e8491d;
   font-weight: bold;
 }
+
 #branding img {
   width: 150px;
 }
@@ -39,6 +58,7 @@ header .container {
 header ul {
   display: flex;
 }
+
 header li {
   padding: 0 20px 0 20px;
 }
@@ -47,29 +67,73 @@ header a {
   color: #008686;
   font-size: 16px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 header a:hover {
   color: #e8491d;
   font-weight: bold;
 }
+
 /*Vision & Mission & Values */
-.box {
-  margin-top: 4rem;
+
+
+
+.vision {
+  margin-top: 3rem;
 }
-.box .container {
-  display: flex;
-  gap: 3rem;
-  align-items: flex-start;
+
+.vision .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
-.box h1 {
-  font-size: 36px;
-  font-weight: 500;
-  flex-basis: 300px;
+
+.Mission .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
 }
-.box p {
-  font-size: 16px;
-  font-weight: 300;
+
+.vision .section-title {
+  color: #0C5464;
+  /* font-family: "IBM Plex Sans Arabic", Sans-serif; */
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.vision p {
+  font-weight: 700;
+  line-height: 1.8;
+  color: #808285;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.vision img,
+.Mission img {
+  max-width: 400px;
+}
+
+.Mission {
+  background-color: #0C5464;
+  opacity: 0.5;
+}
+
+.Mission .section-title {
+  color: #FFFFFF;
+  font-family: "IBM Plex Sans Arabic", Sans-serif;
+  font-size: 35px;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.Mission P {
+  text-align: justify;
+  color: #F1F1F1;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 /* Values  */
@@ -78,25 +142,32 @@ header a:hover {
   padding-top: 2rem;
   text-align: center;
 }
+
 .values .title {
   text-align: left;
 }
+
 .flex-container {
   display: flex;
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .value {
   padding: 15px;
 }
+
 .value img {
   width: 100px;
 }
+
 /* About Section */
 #about {
   padding-top: 2rem;
+
 }
+
 #about h1 {
   font-size: 40px;
   font-weight: 300;
@@ -106,19 +177,23 @@ header a:hover {
   font-size: 20px;
   line-height: 1.6;
 }
+
 .about-wrapper {
   display: flex;
   flex-basis: 50%;
   gap: 2rem;
 }
+
 #about img {
   width: 300px;
   height: 300px;
 }
+
 .about-wrapper {
   background: url(img/about1.jpg);
   background-size: contain;
 }
+
 /* Services */
 #services h1 {
   font-size: 40px;
@@ -139,19 +214,22 @@ header a:hover {
   text-align: center;
   grid-gap: 2rem;
 }
+
 .services p {
   font-size: 1.2rem;
   padding-top: 0.5rem;
 }
-.services .container > div {
+
+.services .container>div {
   padding: 1.5rem 0;
 }
 
-.services .container > div:hover {
+.services .container>div:hover {
   color: #fff;
   cursor: pointer;
   background: #008686;
 }
+
 .tab-border {
   border-bottom: 4px solid #e8491d;
 }
@@ -163,6 +241,7 @@ header a:hover {
   padding: 3rem 0;
   background: #fff;
 }
+
 /* Hide content initiall */
 #tab-1-content,
 #tab-2-content,
@@ -186,18 +265,22 @@ header a:hover {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
+
 .services-wrapper .container {
   width: 100%;
 }
+
 .tab-1-content-inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
 /* Small Screen  */
 @media screen and (max-width: 768px) {
   header {
     padding-top: 30px;
   }
+
   header .container {
     display: flex;
     justify-content: space-between;
@@ -210,6 +293,7 @@ header a:hover {
     flex-direction: column;
     text-align: center;
   }
+
   header ul li {
     margin: 15px;
   }
@@ -218,9 +302,11 @@ header a:hover {
     text-align: center;
     border-top: 1rem;
   }
+
   .box .container {
     display: block;
   }
+
   .values .flex-container {
     display: flex;
     gap: 1rem;
@@ -230,16 +316,20 @@ header a:hover {
     justify-content: center;
     align-items: center;
   }
+
   .box h1 {
     text-align: center;
   }
+
   #about h1 {
     text-align: center;
   }
+
   .about-wrapper {
     display: block;
     text-align: center;
   }
+
   #about img {
     width: 50%;
     margin: auto;
