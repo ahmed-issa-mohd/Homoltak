@@ -82,11 +82,13 @@ header a:hover {
 .vision {
   margin-top: 3rem;
   background: url(../img/texture.webp) no-repeat center/cover;
+  min-height: 500px;
 }
 
 .vision .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 
 .Mission .container {
@@ -101,6 +103,8 @@ header a:hover {
   font-size: 35px;
   font-weight: 800;
   margin-bottom: 1.5rem;
+  margin-top: 2rem;
+
 }
 
 .vision p {
@@ -109,6 +113,7 @@ header a:hover {
   color: #808285;
   font-size: 18px;
   margin-bottom: 0.5rem;
+  margin-left: 9rem;
 }
 
 .vision img,
