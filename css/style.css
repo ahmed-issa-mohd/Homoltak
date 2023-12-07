@@ -81,6 +81,7 @@ header a:hover {
 
 .vision {
   margin-top: 3rem;
+  background: url(../img/texture.webp) no-repeat center/cover;
 }
 
 .vision .container {
