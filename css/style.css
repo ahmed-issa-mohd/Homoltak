@@ -7,7 +7,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
 body {
@@ -36,7 +35,7 @@ body {
 /* Header */
 
 header {
-  border-bottom: 3px solid var(--primary-color)
+  border-bottom: 3px solid var(--primary-color);
 }
 
 header .container {
@@ -77,8 +76,6 @@ header a:hover {
 
 /*Vision & Mission & Values */
 
-
-
 .vision {
   margin-top: 3rem;
   background: url(../img/texture.webp) no-repeat center/cover;
@@ -94,17 +91,16 @@ header a:hover {
 .Mission .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .vision .section-title {
-  color: #0C5464;
+  color: #0c5464;
   /* font-family: "IBM Plex Sans Arabic", Sans-serif; */
   font-size: 35px;
   font-weight: 800;
   margin-bottom: 1.5rem;
   margin-top: 2rem;
-
 }
 
 .vision p {
@@ -122,84 +118,71 @@ header a:hover {
 }
 
 .Mission {
-  background-color: #0C5464;
+  background-color: #0c5464;
   opacity: 0.5;
 }
 
 .Mission .section-title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "IBM Plex Sans Arabic", Sans-serif;
   font-size: 35px;
   margin-bottom: 1rem;
   font-weight: 800;
+  margin-top: 2rem;
 }
 
 .Mission P {
-  text-align: justify;
-  color: #F1F1F1;
+  color: #f1f1f1;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
-/* Values  */
-.values {
-  background: #fff;
-  padding-top: 2rem;
-  text-align: center;
-}
-
-.values .title {
-  text-align: left;
-}
-
-.flex-container {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.value {
-  padding: 15px;
-}
-
-.value img {
-  width: 100px;
-}
-
 /* About Section */
 #about {
-  padding-top: 2rem;
-
+  /* border: 1px solid red; */
+  margin-bottom: 15rem;
+  background: url(../img/texture.webp) no-repeat center/cover;
 }
-
 #about h1 {
-  font-size: 40px;
-  font-weight: 300;
+  margin-top: 2rem;
 }
-
-#about .about-text p {
+#about .section-title {
+  color: #0c5464;
+  /* font-family: "IBM Plex Sans Arabic", Sans-serif; */
+  font-size: 35px;
+  font-weight: 800;
+}
+.about-content {
+  /* border: 1px solid green; */
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+  margin-top: 2rem;
+  min-height: 350px;
+  /* align-items: center; */
+}
+.about-content img {
+  max-width: 400px;
+  /* margin-top: 4rem; */
+}
+#about ul li {
+  list-style: circle;
+  list-style-type: "";
+  margin-right: 20px;
+  padding-right: 16px;
+  color: #f1f1f1;
   font-size: 20px;
-  line-height: 1.6;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #0c5464;
 }
-
-.about-wrapper {
-  display: flex;
-  flex-basis: 50%;
-  gap: 2rem;
+#about ul li::marker {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0d9";
+  font-weight: 900;
+  color: var(--primary-color);
 }
-
-#about img {
-  width: 300px;
-  height: 300px;
-}
-
-.about-wrapper {
-  background: url(img/about1.jpg);
-  background-size: contain;
-}
-
 /* Services */
 #services h1 {
   font-size: 40px;
@@ -226,11 +209,11 @@ header a:hover {
   padding-top: 0.5rem;
 }
 
-.services .container>div {
+.services .container > div {
   padding: 1.5rem 0;
 }
 
-.services .container>div:hover {
+.services .container > div:hover {
   color: #fff;
   cursor: pointer;
   background: #008686;
@@ -280,7 +263,29 @@ header a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-
+/* Values */
+.values {
+  padding: 3rem;
+  background: #fff;
+}
+.values .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.values p {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+.value img {
+  width: 120px;
+  height: 120px;
+}
 /* Small Screen  */
 @media screen and (max-width: 768px) {
   header {
@@ -304,29 +309,6 @@ header a:hover {
     margin: 15px;
   }
 
-  .values .title {
-    text-align: center;
-    border-top: 1rem;
-  }
-
-  .box .container {
-    display: block;
-  }
-
-  .values .flex-container {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-basis: 50%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .box h1 {
-    text-align: center;
-  }
-
   #about h1 {
     text-align: center;
   }
@@ -341,5 +323,31 @@ header a:hover {
     margin: auto;
     text-align: center;
     display: none;
+  }
+
+  .vision .container {
+    display: block;
+    text-align: center;
+  }
+  .vision p {
+    margin-left: 0;
+  }
+  .vision img,
+  .Mission img {
+    max-width: 100%;
+  }
+  .Mission .container {
+    display: block;
+    text-align: center;
+  }
+  .Mission .section-title {
+    margin-top: 2rem;
+  }
+  .values .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .value img {
+    width: 100px;
+    height: 100px;
   }
 }
