@@ -1,240 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Welcome To HOMOLTAK</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/slick.css" />
-  <link rel="stylesheet" href="css/slick-theme.css" />
-  <link rel="stylesheet" href="css/slide.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Welcome To HOMOLTAK</title>
-</head>
-
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div id="branding">
-        <img src="img/web-logo.png" alt="logo" />
-      </div>
-      <ul>
-        <li><a href="home.html">الرئيسية</a></li>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#services">خدماتنا</a></li>
-        <li><a href="contact.html">تواصل معنا</a></li>
-      </ul>
-    </div>
-  </header>
-  <!-- Showcase  -->
-  <div class="showcase">
-    <div class="content">
-      <h1>شركة حمولتك للشحن</h1>
-      <p>
-        نحن نبحث عن مستقبل النقل من خلال توسيع السوق مع تحقيق الموثوقية
-        والقدرة على تحمل التكاليف والكفاءة والمرونة والخلو من المشاكل.
-      </p>
-    </div>
-    <div class="showcase-slider">
-      <div class="item item-1"></div>
-      <div class="item item-2"></div>
-      <div class="item item-3"></div>
-    </div>
-  </div>
-
-  <div class="vision">
-    <div class="container">
-      <div>
-        <h1 class="section-title">ما نطمح له</h1>
-        <p>
-          نحن شغوفون بالتكنولوجيا ونؤمن بأن مجال النقل سيكون ذكيًا وشفافًا
-          وفعالًا وبأسعار معقولة من خلال استخدام تطبيق حمولتك .
-        </p>
-        <p>
-          “شركاؤك في النمو، نساهم معك في سرد حكاية نجاحك.” نحن نهدف إلى إثراء
-          بناء العلامة التجارية بأسلوب عصري يحدد الأداء بمعايير محددة، لتحقيق
-          رؤية أوسع في الظهور الرقمي وتحقيق نمو مستدام.
-        </p>
-      </div>
-      <img src="img/ما-نطمح-له-01-1024x1024.png" alt="" />
-    </div>
-  </div>
-
-  <div class="Mission">
-    <div class="container">
-      <img src="img/Asset-1@2x.png" alt="" />
-      <div>
-        <h2 class="section-title">رسالتنا</h2>
-        <p>
-          أن نكون التطبيق الموثوق به الذي يخدم عملائه بأعلى معايير الجودة
-          والأمان والكفاءة والمصداقية.
-        </p>
-        <p>
-          نحن الطريقة الأكثر فعالية من حيث التكلفة المتافسة للنقل، أولا يجب
-          عليك البدء بإنشاء حساب جديد باسمك ورقم هاتفك ، وانشاء كلمة مرور خاصة
-          بك
-        </p>
-        <p>
-          ستكون قادرا على الحصول على كود الخصم في حالات العروض ولتستمع بالخصم
-          المقدم لك من التطبيق.
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Values -->
-  <div class="values">
-
-    <div class="container">
-      <div class="value">
-        <img src="img/Picture1.png">
-        <p>الشفافية والصدق</p>
-      </div>
-      <div class="value">
-        <img src="img/Picture2.jpg">
-        <p>الابتكار</p>
-      </div>
-      <div class="value">
-        <img src="img/Picture3.jpg">
-        <p>رضا العملاء أولوية</p>
-      </div>
-      <div class="value">
-        <img src="img/Picture4.png">
-        <p>المسؤولية</p>
-      </div>
-      <div class="value">
-        <img src="img/Picture5.png">
-        <p>الموثوقية</p>
-      </div>
-      <div class="value">
-        <img src="img/Picture6.jpg">
-        <p>الجودة</p>
-      </div>
-
-    </div>
-  </div>
-  <!-- About US -->
-  <section id="about">
-    <div class="container">
-      <h1 class="section-title">من نحن</h1>
-      <div class="about-content">
+  <body>
+    <button type="button" class="btn" id="btn-back-to-top">
+      <i class="fa-solid fa-circle-arrow-up fa-2xl" style="color: #00a7bd"></i>
+    </button>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div id="branding">
+          <img src="img/web-logo.png" alt="logo" />
+        </div>
         <ul>
-          <li>
-            <p>
-              نحن شركة التطبيق ذكي لنقل البضائع من خلال حجز شاحنة؛ هذا التطبيق يجمع شركات النقل مع العملاء (المؤسسات /
-              الأفراد)، ويمكن للعميل ان يصل إلى الآلاف من الناقلين على التطبيق بينما سيتمكن السائق من الوصول إلى ملايين
-              العملاء أيضًا.
-            </p>
-          </li>
-          <li>
-            <p>يتميز التطبيق بتصميم مميز جعل استخدام التطبيق سهلاً ومرنًا وودودًا، وقد تم مراعاة واجهة المستخدم وتجربة
-              المستخدم لتلبية تجارب المستخدمين المختلفة.
-            </p>
-          </li>
-          <li>
-            <p>لدى حمولتك تطبيقان أحدهما لاستخدام العملاء والآخر مخصص للناقلين. يتم ربط كلا التطبيقين معًا من خلال برمجة
-              أصلية للواجهة الخلفية باستخدام لغة متميزة مع لوحة تحكم رئيسية مرنة، بينما تتم برمجة الواجهة الأمامية
-              بواسطة لغات البرمجة المتقدمة.
-            </p>
-          </li>
+          <li><a href="home.html">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
         </ul>
-        <img src="img/sahhenban.png">
+      </div>
+    </header>
+    <!-- Showcase  -->
+    <div class="showcase">
+      <div class="content">
+        <h1>شركة حمولتك للشحن</h1>
+        <p>
+          نحن نبحث عن مستقبل النقل من خلال توسيع السوق مع تحقيق الموثوقية
+          والقدرة على تحمل التكاليف والكفاءة والمرونة والخلو من المشاكل.
+        </p>
+      </div>
+      <div class="showcase-slider">
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
       </div>
     </div>
-  </section>
-  <!-- Tabs -->
-  <!-- Services Tap -->
-  <div class="services-wrapper">
-    <section id="services" class="services">
+
+    <div class="vision">
       <div class="container">
-        <div id="tab-1" class="tab-item tab-border">
-          <p class="hide-sm">Open Transfer</p>
+        <div>
+          <h1 class="section-title">ما نطمح له</h1>
+          <p>
+            نحن شغوفون بالتكنولوجيا ونؤمن بأن مجال النقل سيكون ذكيًا وشفافًا
+            وفعالًا وبأسعار معقولة من خلال استخدام تطبيق حمولتك .
+          </p>
+          <p>
+            “شركاؤك في النمو، نساهم معك في سرد حكاية نجاحك.” نحن نهدف إلى إثراء
+            بناء العلامة التجارية بأسلوب عصري يحدد الأداء بمعايير محددة، لتحقيق
+            رؤية أوسع في الظهور الرقمي وتحقيق نمو مستدام.
+          </p>
         </div>
-        <div id="tab-2" class="tab-item">
-          <p class="hide-sm">Closed Transfer</p>
+        <img src="img/ما-نطمح-له-01-1024x1024.png" alt="" />
+      </div>
+    </div>
+
+    <div class="Mission">
+      <div class="container">
+        <img src="img/Asset-1@2x.png" alt="" />
+        <div>
+          <h2 class="section-title">رسالتنا</h2>
+          <p>
+            أن نكون التطبيق الموثوق به الذي يخدم عملائه بأعلى معايير الجودة
+            والأمان والكفاءة والمصداقية.
+          </p>
+          <p>
+            نحن الطريقة الأكثر فعالية من حيث التكلفة المتافسة للنقل، أولا يجب
+            عليك البدء بإنشاء حساب جديد باسمك ورقم هاتفك ، وانشاء كلمة مرور خاصة
+            بك
+          </p>
+          <p>
+            ستكون قادرا على الحصول على كود الخصم في حالات العروض ولتستمع بالخصم
+            المقدم لك من التطبيق.
+          </p>
         </div>
-        <div id="tab-3" class="tab-item">
-          <p class="hide-sm">Cold Transfer</p>
+      </div>
+    </div>
+    <!-- Values -->
+    <div class="values">
+      <div class="container">
+        <div class="value">
+          <img src="img/Picture1.png" />
+          <p>الشفافية والصدق</p>
         </div>
-        <div id="tab-4" class="tab-item">
-          <p class="hide-sm">Liquid Transfer</p>
+        <div class="value">
+          <img src="img/Picture2.jpg" />
+          <p>الابتكار</p>
         </div>
-        <div id="tab-5" class="tab-item">
-          <p class="hide-sm">Towing Transfer</p>
+        <div class="value">
+          <img src="img/Picture3.jpg" />
+          <p>رضا العملاء أولوية</p>
         </div>
-        <div id="tab-6" class="tab-item">
-          <p class="hide-sm">Coming Soon</p>
+        <div class="value">
+          <img src="img/Picture4.png" />
+          <p>المسؤولية</p>
+        </div>
+        <div class="value">
+          <img src="img/Picture5.png" />
+          <p>الموثوقية</p>
+        </div>
+        <div class="value">
+          <img src="img/Picture6.jpg" />
+          <p>الجودة</p>
+        </div>
+      </div>
+    </div>
+    <!-- About US -->
+    <section id="about">
+      <div class="container">
+        <h1 class="section-title">من نحن</h1>
+        <div class="about-content">
+          <ul>
+            <li>
+              <p>
+                نحن شركة التطبيق ذكي لنقل البضائع من خلال حجز شاحنة؛ هذا التطبيق
+                يجمع شركات النقل مع العملاء (المؤسسات / الأفراد)، ويمكن للعميل
+                ان يصل إلى الآلاف من الناقلين على التطبيق بينما سيتمكن السائق من
+                الوصول إلى ملايين العملاء أيضًا.
+              </p>
+            </li>
+            <li>
+              <p>
+                يتميز التطبيق بتصميم مميز جعل استخدام التطبيق سهلاً ومرنًا
+                وودودًا، وقد تم مراعاة واجهة المستخدم وتجربة المستخدم لتلبية
+                تجارب المستخدمين المختلفة.
+              </p>
+            </li>
+            <li>
+              <p>
+                لدى حمولتك تطبيقان أحدهما لاستخدام العملاء والآخر مخصص للناقلين.
+                يتم ربط كلا التطبيقين معًا من خلال برمجة أصلية للواجهة الخلفية
+                باستخدام لغة متميزة مع لوحة تحكم رئيسية مرنة، بينما تتم برمجة
+                الواجهة الأمامية بواسطة لغات البرمجة المتقدمة.
+              </p>
+            </li>
+          </ul>
+          <img src="img/sahhenban.png" />
         </div>
       </div>
     </section>
-    <!-- Tab Content -->
-    <section class="tab-content">
+    <!-- Tabs -->
+    <!-- Services Tap -->
+    <div class="services-wrapper" style="display: none">
+      <section id="services" class="services">
+        <div class="container">
+          <div id="tab-1" class="tab-item tab-border">
+            <p class="hide-sm">Open Transfer</p>
+          </div>
+          <div id="tab-2" class="tab-item">
+            <p class="hide-sm">Closed Transfer</p>
+          </div>
+          <div id="tab-3" class="tab-item">
+            <p class="hide-sm">Cold Transfer</p>
+          </div>
+          <div id="tab-4" class="tab-item">
+            <p class="hide-sm">Liquid Transfer</p>
+          </div>
+          <div id="tab-5" class="tab-item">
+            <p class="hide-sm">Towing Transfer</p>
+          </div>
+          <div id="tab-6" class="tab-item">
+            <p class="hide-sm">Coming Soon</p>
+          </div>
+        </div>
+      </section>
+      <!-- Tab Content -->
+      <section class="tab-content">
+        <div class="container">
+          <!-- Tab Content 1 -->
+          <div id="tab-1-content" class="tab-content-item show">
+            <div class="tab-1-content-inner">
+              <img src="img/ser1.jpg" />
+
+              <p>Double cab side pickup up to 800 kg. (Pick up)</p>
+            </div>
+          </div>
+          <!-- Tab Content 2 -->
+          <div id="tab-2-content" class="tab-content-item">
+            <div class="tab-1-content-inner">
+              <h1>Services 2</h1>
+              <div>
+                <p class="text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  a cumque blanditiis laudantium magnam aut rerum, id architecto
+                  quos, explicabo expedita vel, eum sint. Quaerat eaque aliquam
+                  obcaecati! Iure illo temporibus enim quo accusamus minus odio
+                  alias veritatis deserunt distinctio amet eligendi error magni
+                  ipsa inventore porro optio nulla doloribus, expedita minima
+                  quia! Corporis exercitationem sequi beatae ducimus omnis harum
+                  vero veniam delectus non? Perferendis, omnis rem excepturi
+                  earum quaerat autem culpa, blanditiis dolor sunt iusto optio
+                  assumenda! Eius voluptates assumenda deserunt saepe neque
+                  dolore tempore! Iste aliquam quos odit distinctio autem harum
+                  nisi ipsam? Quisquam, dolorem? Qui, reiciendis neque!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3 Content -->
+          <div id="tab-3-content" class="tab-content-item">
+            <div class="tab-1-content-inner">
+              <h1>Services 3</h1>
+              <div>
+                <p class="text-lg">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                  ab non aliquid velit voluptatum, fugit temporibus accusantium
+                  maxime et asperiores in eveniet dolor. Ab earum distinctio
+                  veniam, praesentium perferendis ad saepe totam atque repellat
+                  similique esse quia magnam rem. Nam adipisci cum placeat dolor
+                  facilis aspernatur quia! Sit, natus suscipit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Contact Us Form -->
+    <section class="contact-us" id="contact">
       <div class="container">
-        <!-- Tab Content 1 -->
-        <div id="tab-1-content" class="tab-content-item show">
-          <div class="tab-1-content-inner">
-            <img src="img/ser1.jpg" />
-
-            <p>Double cab side pickup up to 800 kg. (Pick up)</p>
+        <h1 class="brand">شركة التطبيق السريع للنقل</h1>
+        <div class="wrapper animate__animated animate__bounceInRight">
+          <div class="company-info">
+            <h3>تواصل مع حمولتك</h3>
+            <ul>
+              <li><i class="fa-solid fa-road"></i> شارع ابو نصير 44</li>
+              <li><i class="fa-solid fa-phone"></i> (962)77-77777</li>
+              <li><i class="fa-solid fa-envelope"></i> test@homoltak.com</li>
+            </ul>
           </div>
-        </div>
-        <!-- Tab Content 2 -->
-        <div id="tab-2-content" class="tab-content-item">
-          <div class="tab-1-content-inner">
-            <h1>Services 2</h1>
-            <div>
-              <p class="text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                a cumque blanditiis laudantium magnam aut rerum, id architecto
-                quos, explicabo expedita vel, eum sint. Quaerat eaque aliquam
-                obcaecati! Iure illo temporibus enim quo accusamus minus odio
-                alias veritatis deserunt distinctio amet eligendi error magni
-                ipsa inventore porro optio nulla doloribus, expedita minima
-                quia! Corporis exercitationem sequi beatae ducimus omnis harum
-                vero veniam delectus non? Perferendis, omnis rem excepturi
-                earum quaerat autem culpa, blanditiis dolor sunt iusto optio
-                assumenda! Eius voluptates assumenda deserunt saepe neque
-                dolore tempore! Iste aliquam quos odit distinctio autem harum
-                nisi ipsam? Quisquam, dolorem? Qui, reiciendis neque!
+          <div class="contact">
+            <h3 class="title">تواصل معنا</h3>
+            <form action="#">
+              <p>
+                <label for="name">الاسم</label>
+                <input type="text" name="name" id="name" required />
               </p>
-            </div>
-          </div>
-        </div>
+              <p>
+                <label for="email">البريد الالكتروني</label>
+                <input type="email" name="email" id="email" required />
+              </p>
+              <p>
+                <label for="phone">رقم الهاتف</label>
+                <input type="text" name="phone" id="phone" required />
+              </p>
+              <p>
+                <label for="location">الموقع</label>
+                <input type="text" name="location" id="location" required />
+              </p>
 
-        <!-- Tab 3 Content -->
-        <div id="tab-3-content" class="tab-content-item">
-          <div class="tab-1-content-inner">
-            <h1>Services 3</h1>
-            <div>
-              <p class="text-lg">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-                ab non aliquid velit voluptatum, fugit temporibus accusantium
-                maxime et asperiores in eveniet dolor. Ab earum distinctio
-                veniam, praesentium perferendis ad saepe totam atque repellat
-                similique esse quia magnam rem. Nam adipisci cum placeat dolor
-                facilis aspernatur quia! Sit, natus suscipit.
+              <p class="full">
+                <label for="message">ملاحظات</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
               </p>
-            </div>
+              <p class="full">
+                <button>ارسل</button>
+              </p>
+            </form>
           </div>
         </div>
       </div>
     </section>
-  </div>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
-  <script src="js/script.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.showcase-slider').slick({
-        autoplay: 'true ',
-        dots: true,
-        arrows: true,
-        // fade: true
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.showcase-slider').slick({
+          autoplay: 'true ',
+          dots: true,
+          arrows: true,
+          // fade: true
+        });
       });
-
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
