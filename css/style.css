@@ -1,9 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap");
 :root {
   --primary-color: #008686;
   scroll-behavior: smooth;
   --secondary-color: #e8491d;
 }
-
 
 * {
   box-sizing: border-box;
@@ -13,6 +13,29 @@
 
 body {
   direction: rtl;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: -webkit-gradient(
+    linear,
+    40% 0%,
+    75% 84%,
+    from(#008686),
+    to(#03a1a1),
+    color-stop(0.6, #21aaaa)
+  );
 }
 
 .container {
@@ -31,7 +54,7 @@ ul {
 }
 
 body {
-  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  font-family: "Cairo", sans-serif;
   background-color: #f4f4f4;
 }
 
@@ -90,15 +113,31 @@ header a:hover {
 /*Vision & Mission & Values */
 
 .vision {
-  margin-top: 3rem;
   background: url(../img/texture.webp) no-repeat center/cover;
-  min-height: 500px;
+  min-height: 400px;
+  margin-top: -28px;
+  padding-top: 28px;
 }
 
 .vision .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  align-items: center;
+  /* align-items: center; */
+  grid-gap: 2rem;
+}
+.vision li {
+  list-style-type: "";
+  margin-right: 20px;
+  padding-right: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.vision li::marker {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: var(--primary-color);
 }
 
 .Mission .container {
@@ -109,11 +148,10 @@ header a:hover {
 
 .vision .section-title {
   color: #0c5464;
-  /* font-family: "IBM Plex Sans Arabic", Sans-serif; */
+  font-family: "Cairo", sans-serif;
   font-size: 35px;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  margin-top: 2rem;
 }
 
 .vision p {
@@ -122,7 +160,7 @@ header a:hover {
   color: #808285;
   font-size: 18px;
   margin-bottom: 0.5rem;
-  margin-left: 9rem;
+  margin-bottom: 1.5rem;
 }
 
 .vision img,
@@ -132,12 +170,12 @@ header a:hover {
 
 .Mission {
   background-color: #0c5464;
-  opacity: 0.5;
+  min-height: 445px;
 }
 
 .Mission .section-title {
   color: #ffffff;
-  font-family: "IBM Plex Sans Arabic", Sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 35px;
   margin-bottom: 1rem;
   font-weight: 800;
@@ -153,8 +191,6 @@ header a:hover {
 
 /* About Section */
 #about {
-  /* border: 1px solid red; */
-  margin-bottom: 3rem;
   background: url(../img/texture.webp) no-repeat center/cover;
 }
 
@@ -164,7 +200,6 @@ header a:hover {
 
 #about .section-title {
   color: #0c5464;
-  /* font-family: "IBM Plex Sans Arabic", Sans-serif; */
   font-size: 35px;
   font-weight: 800;
 }
@@ -185,7 +220,6 @@ header a:hover {
 }
 
 #about ul li {
-  list-style: circle;
   list-style-type: "";
   margin-right: 20px;
   padding-right: 16px;
@@ -229,11 +263,11 @@ header a:hover {
   padding-top: 0.5rem;
 }
 
-.services .container>div {
+.services .container > div {
   padding: 1.5rem 0;
 }
 
-.services .container>div:hover {
+.services .container > div:hover {
   color: #fff;
   cursor: pointer;
   background: #008686;
@@ -300,7 +334,7 @@ header a:hover {
 }
 
 .values p {
-  font-size: 25px;
+  font-size: 15px;
   font-weight: bold;
   color: var(--primary-color);
   margin-top: 0.5rem;
@@ -310,21 +344,51 @@ header a:hover {
   width: 120px;
   height: 120px;
 }
+/* App Section  */
 
-/* Contact Us Form */
-
-.contact-us .consatainer {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
+#app {
+  background: #a0d1cc;
 }
+#app .container {
+  height: 500px;
+}
+
+#app .container {
+  display: flex;
+}
+#app .image-container,
+#app .content {
+  flex-grow: 1;
+  width: 50%;
+  height: 100%;
+}
+#app .content {
+  color: #000;
+}
+
+#app .title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+#app .content p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 0.5rem;
+}
+/* Contact Us Form */
 
 .contact-us ul {
   list-style: none;
   padding: 0;
 }
 
+.company-info ul li {
+  padding: 0.5rem 0;
+}
 .contact-us .brand {
   text-align: center;
   margin-bottom: 2rem;
@@ -338,12 +402,12 @@ header a:hover {
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
-.wrapper>* {
+.wrapper > * {
   padding: 1em;
 }
 
 .company-info {
-  background: var(--primary-color);
+  background: #0c5464;
   direction: rtl;
 }
 
@@ -361,7 +425,7 @@ header a:hover {
 .contact form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px
+  grid-gap: 20px;
 }
 
 .contact form label {
@@ -385,27 +449,46 @@ header a:hover {
 }
 
 .contact form button {
-  background: var(--primary-color);
+  background: #0c5464;
   border: 0;
   text-transform: uppercase;
-
 }
 
 .contact form button:hover,
 .contact form button:focus {
-  background: #46d8d8;
+  background: #1e9090;
   color: #fff;
   outline: 0;
-  transition: background-color 2s ease-out;
+  transition: all 0.5s ease-out;
 }
 
-@media(min-width:700px) {
+footer {
+  background: #48526c;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  margin-top: 3rem;
+}
+footer p,
+a {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cairo", sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0px;
+}
+footer p .accent {
+  color: orange;
+}
+@media (min-width: 700px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
-  .wrapper>* {
+  .wrapper > * {
     padding: 2rem;
   }
 
