@@ -56,3 +56,24 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+let header = document.querySelector('header');
+let container = document.getElementById('container');
+let logo = document.getElementById('logo');
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    container.style.padding = '0';
+    container.style.minHeight = '0';
+    logo.style.width = '100px';
+    logo.style.marginTop = '15px';
+  } else {
+    container.style.padding = '1rem';
+    container.style.minHeight = '70px';
+    logo.style.width = '150px';
+    logo.style.marginTop = '0px';
+  }
+}

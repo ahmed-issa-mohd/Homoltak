@@ -10,7 +10,7 @@
 
 .showcase {
   position: relative;
-  direction: ltr;
+  /* direction: ltr; */
 }
 
 .showcase .content {
@@ -39,6 +39,12 @@
 .showcase-slider .item {
   font-size: 30px;
   height: 90vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 4rem;
+  font-size: 45px;
+  font-weight: bold;
 }
 
 .showcase-slider .item-1 {
@@ -53,28 +59,50 @@
   background: url(../img/t4.jpg) no-repeat left top/cover;
 }
 
+.showcase-slider .item-4 {
+  background: url(../img/truck4.jpg ) no-repeat left -200px/cover;
+}
+
+.showcase-slider .item-5 {
+  background: url(../img/truck5.jpg) no-repeat left top/cover;
+}
+
+.showcase-slider .item-6 {
+  background: url(../img/truck6.jpg) no-repeat left top/cover;
+}
+
+
+.showcase-slider .item-7 {
+  background: url(../img/truck7.jpg) no-repeat center -200px/cover;
+}
+
 /* APP Section  */
 #app .image-slider {
   direction: ltr;
+  padding-top: 3rem;
 }
+
 .image-slider .item {
-  height: 300px;
+  height: 350px;
   border: 1px solid orange;
   background: #f0d1d1;
 }
+
 .image-slider img {
-  height: 300px;
+  height: 400px;
 }
 
 @media screen and (max-width: 768px) {
   .showcase .content {
     top: 30%;
   }
+
   .showcase .content h1 {
     font-size: 30px;
     font-weight: bold;
     color: var(--primary-color);
   }
+
   .showcase .content p {
     color: #eee;
     font-size: 20px;

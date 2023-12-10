@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap");
+
 :root {
   --primary-color: #008686;
   scroll-behavior: smooth;
@@ -14,6 +15,7 @@
 body {
   direction: rtl;
 }
+
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
   background-color: #f5f5f5;
@@ -28,14 +30,12 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #fff;
-  background-image: -webkit-gradient(
-    linear,
-    40% 0%,
-    75% 84%,
-    from(#008686),
-    to(#03a1a1),
-    color-stop(0.6, #21aaaa)
-  );
+  background-image: -webkit-gradient(linear,
+      40% 0%,
+      75% 84%,
+      from(#008686),
+      to(#03a1a1),
+      color-stop(0.6, #21aaaa));
 }
 
 .container {
@@ -69,9 +69,16 @@ body {
 }
 
 /* Header */
+.red {
+  background: red;
+}
 
 header {
   border-bottom: 3px solid var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: rgb(244, 244, 244);
 }
 
 header .container {
@@ -125,6 +132,7 @@ header a:hover {
   /* align-items: center; */
   grid-gap: 2rem;
 }
+
 .vision li {
   list-style-type: "";
   margin-right: 20px;
@@ -133,6 +141,7 @@ header a:hover {
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
+
 .vision li::marker {
   font-family: "Font Awesome 5 Free";
   content: "\f00c";
@@ -191,7 +200,8 @@ header a:hover {
 
 /* About Section */
 #about {
-  background: url(../img/texture.webp) no-repeat center/cover;
+  background: url(../img/bg6.jpg) no-repeat center/cover;
+  background-attachment: fixed;
 }
 
 #about h1 {
@@ -199,24 +209,24 @@ header a:hover {
 }
 
 #about .section-title {
-  color: #0c5464;
+  color: #f9feff;
   font-size: 35px;
   font-weight: 800;
 }
 
 .about-content {
-  /* border: 1px solid green; */
+
   display: grid;
   grid-template-columns: auto auto;
   gap: 3rem;
   margin-top: 2rem;
   min-height: 350px;
-  /* align-items: center; */
+
 }
 
 .about-content img {
   max-width: 400px;
-  /* margin-top: 4rem; */
+
 }
 
 #about ul li {
@@ -227,7 +237,7 @@ header a:hover {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: #0c5464;
+  color: #f9feff;
 }
 
 #about ul li::marker {
@@ -263,11 +273,11 @@ header a:hover {
   padding-top: 0.5rem;
 }
 
-.services .container > div {
+.services .container>div {
   padding: 1.5rem 0;
 }
 
-.services .container > div:hover {
+.services .container>div:hover {
   color: #fff;
   cursor: pointer;
   background: #008686;
@@ -322,6 +332,8 @@ header a:hover {
 .values {
   padding: 3rem;
   background: #fff;
+  background: url(../img/bg4.jpg) no-repeat left top/cover;
+  background-attachment: fixed;
 }
 
 .values .container {
@@ -344,24 +356,28 @@ header a:hover {
   width: 120px;
   height: 120px;
 }
+
 /* App Section  */
 
 #app {
-  background: #a0d1cc;
+  background: #daebe9;
+
 }
-#app .container {
-  height: 500px;
-}
+
+
 
 #app .container {
   display: flex;
+  gap: 3rem;
 }
+
 #app .image-container,
 #app .content {
   flex-grow: 1;
   width: 50%;
   height: 100%;
 }
+
 #app .content {
   color: #000;
 }
@@ -372,6 +388,7 @@ header a:hover {
   font-weight: 800;
   line-height: normal;
 }
+
 #app .content p {
   font-size: 20px;
   font-style: normal;
@@ -379,6 +396,7 @@ header a:hover {
   line-height: 30px;
   margin-top: 0.5rem;
 }
+
 /* Contact Us Form */
 
 .contact-us ul {
@@ -389,6 +407,7 @@ header a:hover {
 .company-info ul li {
   padding: 0.5rem 0;
 }
+
 .contact-us .brand {
   text-align: center;
   margin-bottom: 2rem;
@@ -402,7 +421,7 @@ header a:hover {
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
-.wrapper > * {
+.wrapper>* {
   padding: 1em;
 }
 
@@ -469,6 +488,7 @@ footer {
   text-align: center;
   margin-top: 3rem;
 }
+
 footer p,
 a {
   font-weight: 400;
@@ -479,16 +499,18 @@ a {
   line-height: 1.7;
   letter-spacing: 0px;
 }
+
 footer p .accent {
   color: orange;
 }
+
 @media (min-width: 700px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
-  .wrapper > * {
+  .wrapper>* {
     padding: 2rem;
   }
 
@@ -499,6 +521,8 @@ footer p .accent {
     text-align: right;
   }
 }
+
+
 
 /* Small Screen  */
 @media screen and (max-width: 768px) {
