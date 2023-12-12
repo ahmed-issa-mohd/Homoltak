@@ -28,7 +28,6 @@
         <li><a href="#about">من نحن</a></li>
         <li><a href="#services">خدماتنا</a></li>
         <li><a href="#contact">تواصل معنا</a></li>
-        <li><a href="#contact">تواصل معنا</a></li>
       </ul>
     </div>
   </header>
@@ -100,6 +99,7 @@
   <!-- Values -->
   <div class="values">
     <div class="container">
+      <h1 class="section-title"> قيمنا </h1>
       <div class="value">
         <img src="img/Picture1.png" />
         <p>الشفافية والصدق</p>
@@ -123,6 +123,10 @@
       <div class="value">
         <img src="img/Picture6.png" />
         <p>الجودة</p>
+      </div>
+      <div class="value">
+        <img src="img/Picture7.png" />
+        <p>التعلم والتطوير </p>
       </div>
     </div>
   </div>
@@ -324,7 +328,11 @@
     <div class="container">
       <p><span>حمولتك</span>&nbsp;©. جميع الحقوق محفوظة. |&nbsp;<a target="_self" class="accent"
           href="Privacy.html">سياسة
-          الخصوصية</a></p>
+          الخصوصية</a>
+
+      </p>
+      <a href="#"> <img src="img/playstore.png"></a>
+
     </div>
   </footer>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -339,17 +347,14 @@
         arrows: true,
         rtl: true
       });
-      $('.image-slider').slick({
-        autoplay: 'false ',
-        rtl: true,
-        arrows: false,
-      });
+
 
       $('.app-text-slider').slick({
         autoplay: 'true ',
         rtl: true,
         arrows: false,
-        // speed:600
+        speed: 500,
+        dots: true,
       });
     });
   </script>

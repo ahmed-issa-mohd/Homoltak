@@ -347,7 +347,7 @@ header a:hover {
 .values {
   padding: 3rem;
   background: #fff;
-  background: url(../img/bg10.jpg) no-repeat left top/ cover;
+  background: url(../img/bg3.jpg) no-repeat left center/ cover;
   background-attachment: fixed;
 }
 
@@ -360,6 +360,15 @@ header a:hover {
   align-items: center;
 }
 
+.values .section-title {
+  grid-column: 1/4;
+  text-align: right;
+  color: #0c5464;
+  font-family: "Cairo", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
 .values p {
   font-size: 15px;
   font-weight: bold;
@@ -367,6 +376,9 @@ header a:hover {
   margin-top: 0.5rem;
 }
 
+.values .value:last-child {
+  grid-column: 1/4;
+}
 .value img {
   width: 120px;
   height: 120px;
@@ -506,7 +518,7 @@ header a:hover {
 }
 
 footer {
-  background: #48526c;
+  background: #070e0e;
   padding-top: 20px;
   padding-bottom: 30px;
   text-align: center;
@@ -526,6 +538,10 @@ a {
 
 footer p .accent {
   color: orange;
+}
+footer img {
+  width: 120px;
+  margin-top: 1rem;
 }
 
 @media (min-width: 700px) {
@@ -599,7 +615,8 @@ footer p .accent {
 
   .vision img,
   .Mission img {
-    max-width: 100%;
+    max-width: 70%;
+    margin-top: 30px;
   }
   .Mission {
     padding-top: 30px;

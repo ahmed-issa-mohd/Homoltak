@@ -103,7 +103,6 @@
     rgba(137, 69, 236, 0) 176.24%
   );
   padding: 20px;
-  /* direction: ltr; */
   font-size: 16px;
 }
 
@@ -126,12 +125,5 @@
   .showcase-slider .item {
     font-size: 25px;
     text-align: center;
-  }
-  #about ul li {
-    text-align: center;
-    margin-right: 0;
-  }
-  #about ul li::marker {
-    content: "";
   }
 }
