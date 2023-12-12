@@ -90,7 +90,7 @@ body {
 }
 
 header {
-  border-bottom: 3px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
   background-color: rgb(244, 244, 244);
   position: sticky;
   top: 0;
@@ -103,6 +103,14 @@ header .container {
   align-items: center;
 }
 
+header .menu-btn {
+  cursor: pointer;
+  display: none;
+}
+
+.show {
+  display: flex !important;
+}
 #branding {
   color: #e8491d;
   font-weight: bold;
@@ -347,7 +355,7 @@ header a:hover {
 .values {
   padding: 3rem;
   background: #fff;
-  background: url(../img/bg3.jpg) no-repeat left center/ cover;
+  background: url(../img/bg18.jpg) no-repeat left center/ cover;
   background-attachment: fixed;
 }
 
@@ -563,23 +571,29 @@ footer img {
 }
 
 /* Small Screen  */
+/* @media screen and (max-width: 768px) { */
 @media screen and (max-width: 768px) {
   header {
-    padding-top: 30px;
     position: static;
   }
-
+  header .menu-btn {
+    display: block;
+  }
   header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 90px;
-    flex-direction: column;
+    flex-flow: wrap;
+    padding: 0.2rem;
   }
-
+  #branding img {
+    width: 100px;
+  }
   header ul {
+    display: block;
     flex-direction: column;
     text-align: center;
+    flex: 1 1 100%;
   }
 
   header ul li {

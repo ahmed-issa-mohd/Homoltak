@@ -57,3 +57,16 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
+
+
+// Toggle Menu
+let menu=document.querySelector('.menu');
+let menuBtn=document.querySelector('.menu-btn');
+
+
+menuBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+console.log('Ahmed')
+ 
+}
