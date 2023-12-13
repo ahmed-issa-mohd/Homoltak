@@ -67,6 +67,14 @@ let menuBtn=document.querySelector('.menu-btn');
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-console.log('Ahmed')
- 
+menu.classList.toggle('show')
 }
+
+
+// hide the menu when a click event occurs outside the menu
+document.addEventListener('click', (event) => {
+  if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+    menu.classList.add('hidden');
+    console.log('Ahmed');
+  }
+});

@@ -45,6 +45,7 @@ body::-webkit-scrollbar-thumb {
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
+  overflow: hidden;
 }
 
 a {
@@ -108,9 +109,6 @@ header .menu-btn {
   display: none;
 }
 
-.show {
-  display: flex !important;
-}
 #branding {
   color: #e8491d;
   font-weight: bold;
@@ -325,10 +323,6 @@ header a:hover {
   display: none;
 }
 
-.show {
-  display: block !important;
-}
-
 /* Tab 1 */
 .tab-1-content-inner {
   display: grid;
@@ -353,9 +347,8 @@ header a:hover {
 
 /* Values */
 .values {
-  padding: 3rem;
   background: #fff;
-  background: url(../img/bg18.jpg) no-repeat left center/ cover;
+  background: url(../img/bg10.jpg) no-repeat left center/ cover;
   background-attachment: fixed;
 }
 
@@ -369,7 +362,6 @@ header a:hover {
 }
 
 .values .section-title {
-  grid-column: 1/4;
   text-align: right;
   color: #0c5464;
   font-family: "Cairo", sans-serif;
@@ -472,6 +464,7 @@ header a:hover {
 .company-info {
   background: #0c5464;
   direction: rtl;
+  color: #fff;
 }
 
 .company-info h3,
@@ -571,10 +564,9 @@ footer img {
 }
 
 /* Small Screen  */
-/* @media screen and (max-width: 768px) { */
 @media screen and (max-width: 768px) {
   header {
-    position: static;
+    position: relative;
   }
   header .menu-btn {
     display: block;
@@ -590,16 +582,37 @@ footer img {
     width: 100px;
   }
   header ul {
-    display: block;
-    flex-direction: column;
+    display: none;
+    /* flex-direction: column; */
     text-align: center;
-    flex: 1 1 100%;
+    /* flex: 1 1 100%; */
+    /* transition: all 2s ease-out; */
+    /* border: 1px solid red; */
+    background: #008686c4;
+    position: absolute;
+    width: 100%;
+    top: 48px;
+    z-index: -10;
+    /* margin: 0; */
+    /* padding: 0; */
+    left: 0px;
+    transition: all 10.5 linear;
   }
 
-  header ul li {
-    margin: 15px;
+  .hidden {
+    display: none;
   }
-
+  .show {
+    display: block;
+  }
+  header li {
+    margin: 15px 0;
+    padding: 0 20px 10px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  header a {
+    color: #ffffff;
+  }
   #about h1 {
     text-align: center;
   }
@@ -650,11 +663,17 @@ footer img {
   }
   .values .container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
-
+  .values .section-title {
+    text-align: center;
+  }
   .value img {
     width: 100px;
     height: 100px;
+  }
+  .values .value:last-child {
+    grid-column: 1/3;
   }
   #app {
     text-align: center;

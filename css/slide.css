@@ -39,20 +39,6 @@
 .showcase-slider .item {
   font-size: 30px;
   height: 90vh;
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  padding-top: 4rem;
-  font-size: 45px;
-  font-weight: bold;
-}
-
-.showcase-slider .item-1 {
-  background: url(../img/truck1.jpg) no-repeat left top/cover;
-}
-
-.showcase-slider .item-2 {
-  background: url(../img/truck2.jpg) no-repeat center/cover;
 }
 
 .showcase-slider .item-3 {
@@ -60,19 +46,11 @@
 }
 
 .showcase-slider .item-4 {
-  background: url(../img/truck4.jpg) no-repeat left -200px / cover;
-}
-
-.showcase-slider .item-5 {
-  background: url(../img/truck5.jpg) no-repeat left top/cover;
+  background: url(../img/truck4.jpg) no-repeat center -100px / cover;
 }
 
 .showcase-slider .item-6 {
-  background: url(../img/truck6.jpg) no-repeat left top/cover;
-}
-
-.showcase-slider .item-7 {
-  background: url(../img/truck7.jpg) no-repeat center -200px / cover;
+  background: url(../img/truck6.jpg) no-repeat left -100px / cover;
 }
 
 /* APP Section  */
@@ -99,7 +77,7 @@
   border: 3px solid #fff;
   background: linear-gradient(
     300deg,
-    rgba(137, 69, 236, 0.1) 5.78%,
+    #0086864d 5.78%,
     rgba(137, 69, 236, 0) 176.24%
   );
   padding: 20px;
@@ -107,8 +85,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .showcase .content {
-    top: 30%;
+  .showcase {
+    max-height: 300px;
+    overflow: hidden;
   }
 
   .showcase .content h1 {
@@ -125,5 +104,36 @@
   .showcase-slider .item {
     font-size: 25px;
     text-align: center;
+    height: 37vh;
+  }
+
+  .showcase-slider .item-3 {
+    background: url(../img/t4.jpg) no-repeat left top/100%;
+  }
+
+  .showcase-slider .item-4 {
+    background: url(../img/truck4.jpg) no-repeat center top / 100%;
+  }
+
+  .showcase-slider .item-6 {
+    background: url(../img/truck6.jpg) no-repeat left top / 100%;
+  }
+
+  .slick-prev {
+    left: 15px;
+    z-index: 5;
+    top: 50%;
+  }
+
+  .slick-next {
+    right: 15px;
+    top: 50%;
+    z-index: 5;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .showcase {
+    max-height: 1000px;
   }
 }
