@@ -1,23 +1,24 @@
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 
+ 
 // Select tab content item
 function selectItem(e) {
   // Remove all show and border classes
-  removeBorder();
+  removetabColor();
   removeShow();
-  // Add border to current tab item
-  this.classList.add('tab-border');
+   
+    // Add tabColor to current tab item
+    this.classList.add('tabColor');
   // Grab content item from DOM
   const tabContentItem = document.querySelector(`#${this.id}-content`);
   // Add show class
   tabContentItem.classList.add('show');
 }
-
-// Remove bottom borders from all tab items
-function removeBorder() {
+// Remove bottom tabColor from all tab items
+function removetabColor() {
   tabItems.forEach((item) => {
-    item.classList.remove('tab-border');
+    item.classList.remove('tabColor');
   });
 }
 
@@ -32,7 +33,7 @@ function removeShow() {
 tabItems.forEach((item) => {
   item.addEventListener('click', selectItem);
 });
-
+ 
 // back To Top
 //Get the button
 let mybutton = document.getElementById('btn-back-to-top');
@@ -60,21 +61,19 @@ function backToTop() {
 
 
 // Toggle Menu
+let header=document.querySelector('header')
 let menu=document.querySelector('.menu');
 let menuBtn=document.querySelector('.menu-btn');
-
-
+let faBars=document.querySelector('.fa-bars');
 menuBtn.addEventListener('click', toggleMenu);
-
 function toggleMenu() {
-menu.classList.toggle('show')
+menu.classList.toggle('showMenue');
+faBars.classList.toggle('fa-xmark')
 }
 
-
-// hide the menu when a click event occurs outside the menu
-document.addEventListener('click', (event) => {
-  if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
-    menu.classList.add('hidden');
-    console.log('Ahmed');
+document.onclick = function(e){
+  if (!menuBtn.contains(e.target) && !menu.contains(e.target) && !header.contains(e.target) ) {
+      faBars.classList.remove("fa-xmark");
+      menu.classList.remove("showMenue");
   }
-});
+}
