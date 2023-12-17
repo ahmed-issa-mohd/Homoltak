@@ -1,19 +1,21 @@
 const tabItems = document.querySelectorAll('.tab-item');
+const serviceContent = document.querySelector('.service-content');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 
- 
+
 // Select tab content item
 function selectItem(e) {
   // Remove all show and border classes
   removetabColor();
   removeShow();
-   
-    // Add tabColor to current tab item
-    this.classList.add('tabColor');
+
+  // Add tabColor to current tab item
+  this.classList.add('tabColor');
   // Grab content item from DOM
   const tabContentItem = document.querySelector(`#${this.id}-content`);
   // Add show class
   tabContentItem.classList.add('show');
+  serviceContent.classList.add('show');
 }
 // Remove bottom tabColor from all tab items
 function removetabColor() {
@@ -33,7 +35,7 @@ function removeShow() {
 tabItems.forEach((item) => {
   item.addEventListener('click', selectItem);
 });
- 
+
 // back To Top
 //Get the button
 let mybutton = document.getElementById('btn-back-to-top');
@@ -61,19 +63,31 @@ function backToTop() {
 
 
 // Toggle Menu
-let header=document.querySelector('header')
-let menu=document.querySelector('.menu');
-let menuBtn=document.querySelector('.menu-btn');
-let faBars=document.querySelector('.fa-bars');
+
+let menu = document.querySelector('.menu');
+let menuBtn = document.querySelector('.menu-btn');
+let faBars = document.querySelector('.fa-bars');
 menuBtn.addEventListener('click', toggleMenu);
 function toggleMenu() {
-menu.classList.toggle('showMenue');
-faBars.classList.toggle('fa-xmark')
+  menu.classList.toggle('showMenue');
+  faBars.classList.toggle('fa-xmark')
 }
 
-document.onclick = function(e){
-  if (!menuBtn.contains(e.target) && !menu.contains(e.target) && !header.contains(e.target) ) {
-      faBars.classList.remove("fa-xmark");
-      menu.classList.remove("showMenue");
+document.onclick = function (e) {
+  if (!menuBtn.contains(e.target) && !menu.contains(e.target) && !header.contains(e.target)) {
+    faBars.classList.remove("fa-xmark");
+    menu.classList.remove("showMenue");
   }
 }
+
+
+// change header 
+let header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 30) {
+    header.classList.add('change')
+  } else {
+    header.classList.remove('change')
+
+  }
+})

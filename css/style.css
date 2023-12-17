@@ -48,6 +48,10 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
 }
 
+.accent {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
 a {
   text-decoration: none;
 }
@@ -111,6 +115,20 @@ header {
   /* position: sticky; */
   top: 0;
   z-index: 100;
+}
+
+header.change {
+  background: gainsboro;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+header.change .container {
+  padding: 0;
+}
+
+header.change #branding img {
+  width: 100px;
 }
 
 header .container {
@@ -309,7 +327,8 @@ header a:hover {
 
 #tab-1-content,
 #tab-2-content,
-#tab-3-content {
+#tab-3-content,
+.service-content {
   display: none;
 }
 .show {
@@ -438,7 +457,7 @@ header a:hover {
 }
 
 .company-info {
-  background: #0c5464;
+  background: #008686;
   direction: rtl;
   color: #fff;
 }
@@ -481,14 +500,14 @@ header a:hover {
 }
 
 .contact form button {
-  background: #0c5464;
+  background: #008686;
   border: 0;
   text-transform: uppercase;
 }
 
 .contact form button:hover,
 .contact form button:focus {
-  background: #1e9090;
+  background: #186565;
   color: #fff;
   outline: 0;
   transition: all 0.5s ease-out;
