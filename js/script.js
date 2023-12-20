@@ -105,7 +105,7 @@ languageSelector.addEventListener('change', (event) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const language = localStorage.getItem('lang');
+  const language = localStorage.getItem('lang') || 'en';
   setLanguage(language);
   $(document).ready(function () {
     if (language == 'ar') {
