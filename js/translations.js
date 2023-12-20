@@ -34,6 +34,10 @@ const translations = {
         values_section_p5: 'Reliability',
         values_section_p6: 'the quality',
         values_section_p7: 'Learning and development',
+        about_section_title: 'About Us',
+        about_section_p1: ' We are a smart application company for transporting goods through truck reservation; This application brings together transportation companies with customers (institutions/individuals), and the customer can access thousands of carriers on the application while the driver will have access to millions of customers as well.',
+        about_section_p2: 'The application features a distinctive design that makes using the application easy, flexible and friendly, and the user interface and user experience have been taken into account to meet different user experiences. ',
+        about_section_p3: ' We are looking for the future of transportation by expanding the market while achieving reliability, affordability, efficiency, flexibility and hassle-free.',
 
 
     },
@@ -72,6 +76,10 @@ const translations = {
         values_section_p5: 'الموثوقية',
         values_section_p6: 'الجودة',
         values_section_p7: 'التعلم والتطوير',
+        about_section_title: 'من نحن',
+        about_section_p1: ' نحن شركة التطبيق الذكي لنقل البضائع من خلال حجز شاحنة؛ هذا التطبيق يجمع شركات النقل مع العملاء (المؤسسات / الأفراد)، ويمكن للعميل ان يصل إلى الآلاف من الناقلين على التطبيق بينما سيتمكن السائق من الوصول إلى ملايين العملاء أيضًا.',
+        about_section_p2: 'يتميز التطبيق بتصميم مميز جعل استخدام التطبيق سهلاً ومرنًا وودودًا، وقد تم مراعاة واجهة المستخدم وتجربة المستخدم لتلبية تجارب المستخدمين المختلفة. ',
+        about_section_p3: 'نحن نبحث عن مستقبل النقل من خلال توسيع السوق مع تحقيق الموثوقية والقدرة على تحمل التكاليف والكفاءة والمرونة والخلو من المشاكل. ',
     }
 };
 

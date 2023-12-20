@@ -634,7 +634,9 @@ footer img {
   .vision p {
     margin-left: 0;
   }
-
+  .Mission {
+    height: auto;
+  }
   .vision img,
   .Mission img {
     max-width: 70%;
@@ -652,7 +654,9 @@ footer img {
   .Mission img {
     max-width: 50%;
   }
-
+  .values {
+    text-align: center;
+  }
   .values .container:nth-child(2) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -691,6 +695,9 @@ footer img {
   }
   #about ul li::marker {
     content: "";
+  }
+  .services-tabs {
+    text-align: center;
   }
   .services-tabs .container:nth-child(2) {
     grid-template-columns: repeat(2, 1fr);
