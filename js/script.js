@@ -1,10 +1,10 @@
-import translations from "./translations.js";
+import translations from './translations.js';
 
 const tabItems = document.querySelectorAll('.tab-item');
 const serviceContent = document.querySelector('.service-content');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
-
-
+const privacLink = document.getElementById('privacLink');
+console.log(privacLink.href);
 // Select tab content item
 function selectItem(e) {
   // Remove all show and border classes
@@ -62,8 +62,6 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-
-
 // Toggle Menu
 
 let menu = document.querySelector('.menu');
@@ -72,27 +70,29 @@ let faBars = document.querySelector('.fa-bars');
 menuBtn.addEventListener('click', toggleMenu);
 function toggleMenu() {
   menu.classList.toggle('showMenue');
-  faBars.classList.toggle('fa-xmark')
+  faBars.classList.toggle('fa-xmark');
 }
 
 document.onclick = function (e) {
-  if (!menuBtn.contains(e.target) && !menu.contains(e.target) && !header.contains(e.target)) {
-    faBars.classList.remove("fa-xmark");
-    menu.classList.remove("showMenue");
+  if (
+    !menuBtn.contains(e.target) &&
+    !menu.contains(e.target) &&
+    !header.contains(e.target)
+  ) {
+    faBars.classList.remove('fa-xmark');
+    menu.classList.remove('showMenue');
   }
-}
+};
 
-
-// change header 
+// change header
 let header = document.querySelector('header');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 30) {
-    header.classList.add('change')
+    header.classList.add('change');
   } else {
-    header.classList.remove('change')
-
+    header.classList.remove('change');
   }
-})
+});
 
 // Translations
 
@@ -142,25 +142,30 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
-})
+});
 
 const setLanguage = (language) => {
-  const elements = document.querySelectorAll("[data-i18n]");
+  const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach((element) => {
     const translationKey = element.getAttribute('data-i18n');
-    element.textContent = translations[language][translationKey]
+    element.textContent = translations[language][translationKey];
   });
   // document.dir = language === 'ar' ? 'rtl' : 'ltr'
 
-  let body = document.getElementsByTagName('body')[0]
+  let body = document.getElementsByTagName('body')[0];
   if (language == 'ar') {
     document.dir = 'rtl';
     body.style.fontFamily = '"Cairo", sans-serif';
-    document.getElementById('siteLanguage').querySelector("[value = 'ar']").selected = 'true';
+    privacLink.href = 'PrivacyPolicyAr.pdf';
+    document
+      .getElementById('siteLanguage')
+      .querySelector("[value = 'ar']").selected = 'true';
   } else {
     document.dir = 'ltr';
-    document.getElementById('siteLanguage').querySelector("[value = 'en']").selected = 'true';
+    document
+      .getElementById('siteLanguage')
+      .querySelector("[value = 'en']").selected = 'true';
     body.style.fontFamily = "'Karla', sans-serif";
+    privacLink.href = 'PrivacyPolicyEn.pdf';
   }
-}
-
+};
