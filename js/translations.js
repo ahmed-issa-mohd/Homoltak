@@ -39,6 +39,9 @@ const translations = {
         about_section_p2: 'The application features a distinctive design that makes using the application easy, flexible and friendly, and the user interface and user experience have been taken into account to meet different user experiences. ',
         about_section_p3: ' We are looking for the future of transportation by expanding the market while achieving reliability, affordability, efficiency, flexibility and hassle-free.',
 
+        footer_p: 'Homoltak ©. all rights are saved. | ',
+        footer_a: ' privacy policy',
+
 
     },
     ar: {
@@ -80,6 +83,8 @@ const translations = {
         about_section_p1: ' نحن شركة التطبيق الذكي لنقل البضائع من خلال حجز شاحنة؛ هذا التطبيق يجمع شركات النقل مع العملاء (المؤسسات / الأفراد)، ويمكن للعميل ان يصل إلى الآلاف من الناقلين على التطبيق بينما سيتمكن السائق من الوصول إلى ملايين العملاء أيضًا.',
         about_section_p2: 'يتميز التطبيق بتصميم مميز جعل استخدام التطبيق سهلاً ومرنًا وودودًا، وقد تم مراعاة واجهة المستخدم وتجربة المستخدم لتلبية تجارب المستخدمين المختلفة. ',
         about_section_p3: 'نحن نبحث عن مستقبل النقل من خلال توسيع السوق مع تحقيق الموثوقية والقدرة على تحمل التكاليف والكفاءة والمرونة والخلو من المشاكل. ',
+        footer_p: 'حمولتك ©. جميع الحقوق محفوظة. |  ',
+        footer_a: 'سياسة الخصوصية ',
     }
 };
 
