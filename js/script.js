@@ -1,3 +1,5 @@
+import translations from "./translations.js";
+
 const tabItems = document.querySelectorAll('.tab-item');
 const serviceContent = document.querySelector('.service-content');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
@@ -91,3 +93,74 @@ window.addEventListener('scroll', () => {
 
   }
 })
+
+// Translations
+
+const languageSelector = document.querySelector('select');
+
+languageSelector.addEventListener('change', (event) => {
+  setLanguage(event.target.value);
+  localStorage.setItem('lang', event.target.value);
+  location.reload();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const language = localStorage.getItem('lang');
+  setLanguage(language);
+  $(document).ready(function () {
+    if (language == 'ar') {
+      $('.showcase-slider').slick({
+        arrows: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        rtl: true,
+      });
+      $('.app-text-slider').slick({
+        arrows: false,
+        speed: 400,
+        dots: true,
+        autoplay: 'true ',
+        autoplaySpeed: 6000,
+        rtl: true,
+      });
+    } else {
+      $('.showcase-slider').slick({
+        arrows: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        ltr: true,
+      });
+      $('.app-text-slider').slick({
+        arrows: false,
+        speed: 400,
+        dots: true,
+        autoplay: 'true ',
+        autoplaySpeed: 6000,
+        ltr: true,
+      });
+    }
+  });
+})
+
+const setLanguage = (language) => {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach((element) => {
+    const translationKey = element.getAttribute('data-i18n');
+    element.textContent = translations[language][translationKey]
+  });
+  // document.dir = language === 'ar' ? 'rtl' : 'ltr'
+
+  let body = document.getElementsByTagName('body')[0]
+  if (language == 'ar') {
+    document.dir = 'rtl';
+    body.style.fontFamily = '"Cairo", sans-serif';
+    document.getElementById('siteLanguage').querySelector("[value = 'ar']").selected = 'true';
+  } else {
+    document.dir = 'ltr';
+    document.getElementById('siteLanguage').querySelector("[value = 'en']").selected = 'true';
+    body.style.fontFamily = "'Karla', sans-serif";
+  }
+}
+

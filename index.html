@@ -26,11 +26,18 @@
         <i class="fa-solid fa-bars fa-xl" style="color: #008686;"></i>
       </div>
       <ul class="menu">
-        <li><a href="/">الرئيسية</a></li>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#services">خدماتنا</a></li>
-        <li><a href="#contact">تواصل معنا</a></li>
+        <li><a href="/" data-i18n="home">الرئيسية</a></li>
+        <li><a href="#about" data-i18n="about">من نحن</a></li>
+        <li><a href="#services" data-i18n='services'>خدماتنا</a></li>
+        <li><a href="#contact" data-i18n='contact'>تواصل معنا</a></li>
+        <li>
+          <select id="siteLanguage">
+            <option value="ar" data-i18n="arabic">العربية</option>
+            <option value="en" data-i18n="english">الانجليزية</option>
+          </select>
+        </li>
       </ul>
+
     </div>
   </header>
   <!-- Showcase  -->
@@ -45,23 +52,25 @@
   <div class="vision">
     <div class="container">
       <div>
-        <h1 class="section-title">ما نطمح له</h1>
+        <h1 class="section-title" data-i18n="vision_section_title">ما نطمح له</h1>
         <ul>
           <li>
-            <p>
+            <p data-i18n="vision_section_p1">
               نحن شغوفون بالتكنولوجيا ونؤمن بأن مجال النقل سيكون ذكيًا وشفافًا
               وفعالًا وبأسعار معقولة من خلال استخدام تطبيق حمولتك .
             </p>
           </li>
           <li>
-            <p>
+            <p data-i18n="vision_section_p2">
               “شركاؤك في النمو، نساهم معك في سرد حكاية نجاحك.” نحن نهدف إلى إثراء
               بناء العلامة التجارية بأسلوب عصري يحدد الأداء بمعايير محددة، لتحقيق
               رؤية أوسع في الظهور الرقمي وتحقيق نمو مستدام.
             </p>
+
           </li>
           <li>
-            <p>نحن نبحث عن مستقبل النقل من خلال توسيع السوق مع تحقيق الموثوقية والقدرة على تحمل التكاليف والكفاءة
+            <p data-i18n="vision_section_p3">نحن نبحث عن مستقبل النقل من خلال توسيع السوق مع تحقيق الموثوقية والقدرة على
+              تحمل التكاليف والكفاءة
               والمرونة
               والخلو من المشاكل.
             </p>
@@ -77,56 +86,51 @@
     <div class="container">
       <img src="img/boarding3.svg" alt="" class="mover-img" />
       <div>
-        <h2 class="section-title">رسالتنا</h2>
-        <p>
-          أن نكون التطبيق الموثوق به الذي يخدم عملائه بأعلى معايير الجودة
-          والأمان والكفاءة والمصداقية.
+        <h2 class="section-title" data-i18n="mission_section_title">رسالتنا</h2>
+        <p data-i18n="mission_section_p1">
+          انشاء تطبيق موثوق به والذي يخدم العملاء بأعلى معايير الجودة والأمان والكفاءة والمصداقية
         </p>
-        <p>
-          نحن الطريقة الأكثر فعالية من حيث التكلفة المتافسة للنقل، أولا يجب
-          عليك البدء بإنشاء حساب جديد باسمك ورقم هاتفك ، وانشاء كلمة مرور خاصة
-          بك
-        </p>
-        <p>
-          ستكون قادرا على الحصول على كود الخصم في حالات العروض ولتستمع بالخصم
-          المقدم لك من التطبيق.
-        </p>
+        <p data-i18n="mission_section_p2">توفير الطريقة الأكثر فعالية من حيث التكلفة المتافسة للنقل، أولا يجب عليك البدء
+          بإنشاء حساب جديد باسمك ورقم
+          هاتفك ، وانشاء كلمة مرور خاصة بك</p>
+        <p data-i18n="mission_section_p3">ستكون قادرا على الحصول على كود الخصم في حالات العروض ولتستمع بالخصم المقدم لك
+          من التطبيق.</p>
       </div>
     </div>
   </div>
   <!-- Values -->
   <div class="values">
     <div class="container">
-      <h1 class="section-title"> قيمنا </h1>
+      <h1 class="section-title" data-i18n="values_section_title"> قيمنا </h1>
     </div>
     <div class="container">
       <div class="value">
         <img src="img/Picture1.png" />
-        <p>الشفافية والصدق</p>
+        <p data-i18n="values_section_p1">الشفافية والصدق</p>
       </div>
       <div class="value">
         <img src="img/bulb-1179.svg" />
-        <p>الابتكار</p>
+        <p data-i18n="values_section_p2">الابتكار</p>
       </div>
       <div class="value">
         <img src="img/Picture3.png" />
-        <p>رضا العملاء أولوية</p>
+        <p data-i18n="values_section_p3">رضا العملاء أولوية</p>
       </div>
       <div class="value">
         <img src="img/Picture4.png" />
-        <p>المسؤولية</p>
+        <p data-i18n="values_section_p4">المسؤولية</p>
       </div>
       <div class="value">
         <img src="img/Picture5.png" />
-        <p>الموثوقية</p>
+        <p data-i18n="values_section_p5">الموثوقية</p>
       </div>
       <div class="value">
         <img src="img/Picture6.png" />
-        <p>الجودة</p>
+        <p data-i18n="values_section_p6">الجودة</p>
       </div>
       <div class="value">
         <img src="img/Picture7.png" />
-        <p>التعلم والتطوير </p>
+        <p data-i18n="values_section_p7">التعلم والتطوير </p>
       </div>
     </div>
   </div>
@@ -464,42 +468,44 @@
   <!-- Contact Us Form -->
   <section class="contact-us" id="contact">
     <div class="container">
-      <h1 class="brand">شركة التطبيق المباشر لنقل البضائع</h1>
+      <h1 class="brand" data-i18n="brand">شركة التطبيق المباشر لنقل البضائع</h1>
       <div class="wrapper animate__animated animate__bounceInRight">
         <div class="company-info">
-          <h3>تواصل مع حمولتك</h3>
+          <h3 data-i18n="company_info_title">تواصل مع حمولتك</h3>
           <ul>
-            <li><i class="fa-solid fa-road"></i> شارع ابو نصير 44</li>
-            <li><i class="fa-solid fa-phone"></i> (962)77-77777</li>
-            <li><i class="fa-solid fa-envelope"></i> test@homoltak.com</li>
+            <li><i class="fa-solid fa-road"></i>
+              <span data-i18n="company_info_street">شارع ابو نصير 44</span>
+            </li>
+            <li><i class="fa-solid fa-phone" data-i18n="company_info_mibile"></i> (962)77-77777</li>
+            <li><i class="fa-solid fa-envelope" data-i18n="company_info_mail"></i> test@homoltak.com</li>
           </ul>
         </div>
         <div class="contact">
-          <h3 class="title">تواصل معنا</h3>
+          <h3 class="title" data-i18n="title">تواصل معنا</h3>
           <form action="#">
             <p>
-              <label for="name">الاسم</label>
+              <label for="name" data-i18n="name">الاسم</label>
               <input type="text" name="name" id="name" required />
             </p>
             <p>
-              <label for="email">البريد الالكتروني</label>
+              <label for="email" data-i18n="email">البريد الالكتروني</label>
               <input type="email" name="email" id="email" required />
             </p>
             <p>
-              <label for="phone">رقم الهاتف</label>
+              <label for="phone" data-i18n="mobile">رقم الهاتف</label>
               <input type="text" name="phone" id="phone" required />
             </p>
             <p>
-              <label for="location">الموقع</label>
+              <label for="location" data-i18n="location">الموقع</label>
               <input type="text" name="location" id="location" required />
             </p>
 
             <p class="full">
-              <label for="message">ملاحظات</label>
+              <label for="message" data-i18n="message">ملاحظات</label>
               <textarea name="message" id="message" rows="5" required></textarea>
             </p>
             <p class="full">
-              <button>ارسل</button>
+              <button data-i18n="sendBtn">ارسل</button>
             </p>
           </form>
         </div>
@@ -519,28 +525,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
-  <script src="js/script.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.showcase-slider').slick({
-        autoplay: 'true ',
-        dots: true,
-        arrows: true,
-        rtl: true
-      });
-
-
-      $('.app-text-slider').slick({
-        autoplay: 'true ',
-        rtl: true,
-        arrows: false,
-        speed: 400,
-        dots: true,
-        autoplaySpeed: 6000
-      });
-    });
-  </script>
-
+  <script src="js/script.js" type="module"></script>
 </body>
 
 </html>

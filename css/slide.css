@@ -8,32 +8,16 @@
   z-index: 5;
 }
 
+[dir="rtl"] .slick-next {
+  right: auto;
+  left: 5px;
+}
+[dir="rtl"] .slick-prev {
+  right: 5px;
+  left: auto;
+}
 .showcase {
   position: relative;
-  /* direction: ltr; */
-}
-
-.showcase .content {
-  position: absolute;
-  top: 30%;
-  right: 50%;
-  z-index: 5;
-  transform: translate(50%, -50%);
-  text-align: center;
-  direction: rtl;
-  z-index: 2;
-}
-
-.showcase .content h1 {
-  font-size: 55px;
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
-.showcase .content p {
-  color: #eee;
-  font-size: 25px;
-  font-weight: bold;
 }
 
 .showcase-slider .item {
@@ -46,17 +30,16 @@
 }
 
 .showcase-slider .item-4 {
-  background: url(../img/truck4.jpg) no-repeat center -100px / cover;
+  background: url(../img/truck4.jpg) no-repeat center top / cover;
 }
 
 .showcase-slider .item-6 {
-  background: url(../img/truck6.jpg) no-repeat left -100px / cover;
+  background: url(../img/truck6.jpg) no-repeat left top / cover;
 }
 
 /* APP Section  */
 #app .image-slider {
   padding-top: 3rem;
-  /* direction: ltr; */
 }
 
 .image-slider .item {
