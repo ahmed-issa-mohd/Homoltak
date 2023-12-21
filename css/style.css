@@ -36,6 +36,9 @@ body::-webkit-scrollbar-thumb {
   );
 }
 
+body {
+  /* direction: rtl; */
+}
 .container {
   max-width: 1170px;
   margin-left: auto;
