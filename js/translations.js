@@ -41,7 +41,10 @@ const translations = {
 
         footer_p: 'Homoltak ©. all rights are saved. | ',
         footer_a: ' privacy policy',
-
+        // App
+        app_section_title: 'Homoltak is an Arab Jordanian platform',
+        item_1_title: 'Why Homoltak',
+        item_1_accent: 'Application',
     },
     ar: {
         home: "الصفحة الرئيسية",
@@ -84,7 +87,9 @@ const translations = {
         about_section_p3: 'نحن نبحث عن مستقبل النقل من خلال توسيع السوق مع تحقيق الموثوقية والقدرة على تحمل التكاليف والكفاءة والمرونة والخلو من المشاكل. ',
         footer_p: 'حمولتك ©. جميع الحقوق محفوظة. |  ',
         footer_a: 'سياسة الخصوصية ',
-
+        app_section_title: 'حمولتك منصة عربية اردنية',
+        item_1_title: ' لماذا تطبيق',
+        item_1_accent: 'حمولتك ؟ ',
     }
 };
 

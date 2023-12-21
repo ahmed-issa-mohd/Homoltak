@@ -110,20 +110,17 @@ body {
 
 header {
   border-bottom: 2px solid var(--primary-color);
-  background-color: rgb(244, 244, 244);
-  /* position: sticky; */
+  background-color: rgb(255, 255, 255);
+
   top: 0;
   z-index: 100;
 }
 
 header.change {
-  background: gainsboro;
+  background: #f1f1f1;
   position: fixed;
   width: 100%;
   top: 0;
-}
-header.change .container {
-  /* padding: 0; */
 }
 
 header.change #branding img {
@@ -144,6 +141,7 @@ header .menu-btn {
 #branding {
   color: #e8491d;
   font-weight: bold;
+  padding: 0.5rem 0;
 }
 
 #branding img {
