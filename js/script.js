@@ -100,17 +100,14 @@ window.addEventListener('scroll', () => {
 });
 
 // Translations
-
-
-
 languageSelector.addEventListener('change', (event) => {
   setLanguage(event.target.value);
   localStorage.setItem('lang', event.target.value);
   location.reload();
 });
-
 document.addEventListener('DOMContentLoaded', () => {
   const language = localStorage.getItem('lang') || 'ar';
+  document.dir = 'rtl';
   if (language == 'ar') {
     document.dir = 'rtl';
     body.style.fontFamily = '"Cairo", sans-serif';
@@ -162,9 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
-
 });
-
 const setLanguage = (language) => {
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach((element) => {
