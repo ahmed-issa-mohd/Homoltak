@@ -107,16 +107,21 @@ languageSelector.addEventListener('change', (event) => {
 });
 document.addEventListener('DOMContentLoaded', () => {
   const language = localStorage.getItem('lang') || 'ar';
-  document.dir = 'rtl';
+
+
+
+
   if (language == 'ar') {
     document.dir = 'rtl';
     body.style.fontFamily = '"Cairo", sans-serif';
+
     privacLink.href = 'PrivacyPolicyAr.pdf';
     document
       .getElementById('siteLanguage')
       .querySelector("[value = 'ar']").selected = 'true';
   } else {
     document.dir = 'ltr';
+    body.style.direction = "ltr";
     document
       .getElementById('siteLanguage')
       .querySelector("[value = 'en']").selected = 'true';
@@ -161,6 +166,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 const setLanguage = (language) => {
+
+
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach((element) => {
     const translationKey = element.getAttribute('data-i18n');

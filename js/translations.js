@@ -42,7 +42,6 @@ const translations = {
         footer_p: 'Homoltak ©. all rights are saved. | ',
         footer_a: ' privacy policy',
 
-
     },
     ar: {
         home: "الصفحة الرئيسية",
@@ -85,6 +84,7 @@ const translations = {
         about_section_p3: 'نحن نبحث عن مستقبل النقل من خلال توسيع السوق مع تحقيق الموثوقية والقدرة على تحمل التكاليف والكفاءة والمرونة والخلو من المشاكل. ',
         footer_p: 'حمولتك ©. جميع الحقوق محفوظة. |  ',
         footer_a: 'سياسة الخصوصية ',
+
     }
 };
 
