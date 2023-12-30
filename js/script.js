@@ -1,5 +1,4 @@
 import translations from './translations.js';
-
 const tabItems = document.querySelectorAll('.tab-item');
 const serviceContent = document.querySelector('.service-content');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
@@ -112,9 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   if (language == 'ar') {
+
     document.dir = 'rtl';
     body.style.fontFamily = '"Cairo", sans-serif';
-
     privacLink.href = 'PrivacyPolicyAr.pdf';
     document
       .getElementById('siteLanguage')
@@ -177,3 +176,6 @@ const setLanguage = (language) => {
 
 
 };
+
+
+

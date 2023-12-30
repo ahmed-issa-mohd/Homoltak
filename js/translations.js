@@ -45,6 +45,19 @@ const translations = {
         app_section_title: 'Homoltak is an Arab Jordanian platform',
         item_1_title: 'Why Homoltak',
         item_1_accent: 'Application',
+        app_item_p1: 'Based on a deep understanding of the market, its requirements, and the challenges facing shippers and carriers, your cargo is reinventing the ways in which goods are transported.',
+        app_item_p2: 'One of the most important features of smart transportation applications is that they are available at any time and wherever you are, even in locations far from the city.',
+        app_item_p3_accent: 'Homoltak',
+        app_item_p3: 'Your cargo provides you with multiple opportunities to increase your income and obtain more transportation opportunities without the need to search or wait long in different situations',
+        // Services Tabs
+        services_tabs_section_title: 'Our Services',
+        services_tabs_S1: 'Transportation by open truck',
+        services_tabs_S2: 'Transportation by closed truck',
+        services_tabs_S3: 'Transportation by refrigerated truck',
+        services_tabs_S4: 'Transportation by frozen vehicle',
+        services_tabs_S5: 'Lifting and pulling winches',
+        services_tabs_S6: 'Liquid transportation',
+        contract: 'contract',
     },
     ar: {
         home: "الصفحة الرئيسية",
@@ -90,6 +103,19 @@ const translations = {
         app_section_title: 'حمولتك منصة عربية اردنية',
         item_1_title: ' لماذا تطبيق',
         item_1_accent: 'حمولتك ؟ ',
+        app_item_p1: 'انطلاقا من فهم عميق للسوق ومتطلباته والتحديات التي تواجه الشاحنين والنافلين حمولتك تقوم بإعادة ابتكار الطرق التي تنقل بها البضاعة',
+        app_item_p2: 'من اهم مميزات ت موعد مهم كـ لقاء عمل ، وعند استخدامك لإحدى تطبيقات النقل الذكي تحصل على وقت إضافي للتركيز أثناء الرحلة على واجباتك المهمة عندما يقوم شخص آخر بـ اصطحابك الى الوجهة المقصودة.',
+        app_item_p3_accent: 'حمولتك',
+        app_item_p3: 'حمولتك توفر لك الفرص المتعددة لرفع دخلك والحصول على فرص نقل اكثر دون الحاجة للبحث او الإنتظار الطويل في المواقف المختلفة',
+        // Services Tabs
+        services_tabs_section_title: 'خدماتنا',
+        services_tabs_S1: 'النقل بمركبة مفتوحة',
+        services_tabs_S2: 'النقل بمركبة مغلقة',
+        services_tabs_S3: 'النقل بمركبة مبردة',
+        services_tabs_S4: 'النقل بمركلة مجمدة',
+        services_tabs_S5: 'ونشات الرفع والسحب',
+        services_tabs_S6: 'نقل السوائل',
+        contract: 'التعاقد',
     }
 };
 
