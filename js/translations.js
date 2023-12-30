@@ -60,7 +60,7 @@ const translations = {
         contract: 'contract',
     },
     ar: {
-        home: "الصفحة الرئيسية",
+        home: "الرئيسية",
         about: "من نحن",
         contact: "تواصل معنا",
         services: 'خدماتنا',
