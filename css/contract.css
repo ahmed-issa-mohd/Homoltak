@@ -107,7 +107,6 @@ footer {
   .contract .form-container {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
   }
   .form-container {
     flex-basis: 440px;
@@ -116,8 +115,4 @@ footer {
   .heading1 {
     margin-top: 10rem;
   }
-}
-
-.song {
-  color: red !important;
 }

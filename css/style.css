@@ -39,9 +39,6 @@ body::-webkit-scrollbar-thumb {
   );
 }
 
-body {
-  direction: rtl;
-}
 .container {
   max-width: 1170px;
   margin-left: auto;
@@ -732,7 +729,7 @@ footer img {
 }
 .whatsapp {
   position: fixed;
-  top: 80%;
-  left: 10px;
+  bottom: 10%;
+  right: 21px;
   z-index: 22;
 }

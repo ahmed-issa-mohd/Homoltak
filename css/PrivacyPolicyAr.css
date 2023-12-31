@@ -35,6 +35,10 @@ h2.heading {
   margin-top: 10px;
   text-align: initial;
 }
+h3 {
+  text-align: left;
+}
+
 .mainDiv .paragraph {
   color: #101010;
   width: 100%;
@@ -46,10 +50,8 @@ h2.heading {
 
 ul {
   list-style: decimal;
+  margin-left: 70px;
 }
-
-.whatsapp {
-  position: fixed;
-  left: 20px;
-  bottom: 20px;
+ul .paragraph {
+  margin: 0 !important;
 }

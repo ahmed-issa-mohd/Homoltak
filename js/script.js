@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .getElementById('siteLanguage')
       .querySelector("[value = 'en']").selected = 'true';
     body.style.fontFamily = "'Karla', sans-serif";
-    privacLink.href = 'PrivacyPolicyEn.pdf';
+    privacLink.href = 'PrivacyPolicyEn.html';
   }
   setLanguage(language);
   $(document).ready(function () {
