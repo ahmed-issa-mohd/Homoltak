@@ -15,7 +15,7 @@ const translations = {
         message: 'Message',
         sendBtn: 'Send',
         company_info_title: 'Contact With Homoltak',
-        company_info_street: 'Abu Nseir St. ',
+        company_info_street: ' Abu Nseir St . ',
         // company_info_mibile: '',
         // company_info_mail: '',
         vision_section_title: 'Our Vision',

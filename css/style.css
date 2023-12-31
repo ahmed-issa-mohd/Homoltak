@@ -730,3 +730,9 @@ footer img {
     margin: 3rem 0 2rem;
   }
 }
+.whatsapp {
+  position: fixed;
+  top: 80%;
+  left: 10px;
+  z-index: 22;
+}

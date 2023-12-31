@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.dir = 'rtl';
     body.style.fontFamily = '"Cairo", sans-serif';
-    privacLink.href = 'PrivacyPolicyAr.pdf';
+    privacLink.href = 'PrivacyPolicyAr.html';
     document
       .getElementById('siteLanguage')
       .querySelector("[value = 'ar']").selected = 'true';
