@@ -87,6 +87,7 @@ body {
   outline: none;
   border: none;
   background: transparent;
+  z-index: 1;
 }
 
 .section-title {
@@ -210,13 +211,10 @@ header a:hover {
   align-items: center;
   height: 100%;
 }
-.Mission .section-title {
-  color: #000;
-}
+
 .vision p {
   font-weight: 400;
   line-height: 1.8;
-  /* color: #808285; */
   color: #000;
   font-size: 18px;
   margin-bottom: 0.5rem;
@@ -234,10 +232,11 @@ header a:hover {
 }
 
 .Mission P {
-  color: #000;
-  font-size: 18px;
-  font-weight: 400;
   margin-bottom: 1.5rem;
+  color: #666666;
+  font-size: 18px;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 /* About Section */
@@ -267,18 +266,19 @@ header a:hover {
 
 #about ul li {
   list-style-type: "";
-  margin-right: 20px;
-  padding-right: 16px;
-  font-size: 20px;
-  font-weight: 400;
+  margin: 0 20px;
+  padding: 0 18px;
   margin-bottom: 1.5rem;
-  color: #004b4b;
+  color: #666666;
+  font-size: 18px;
+  padding-bottom: 20px;
+  font-weight: 700;
 }
 #about ul li::marker {
   font-family: "Font Awesome 5 Free";
-  content: "\f0d9";
+  content: "\f00c";
   font-weight: 900;
-  color: var(--primary-color);
+  color: #00afae;
 }
 
 /* Services Tabs */
@@ -429,13 +429,14 @@ header a:hover {
   font-weight: 800;
   line-height: normal;
 }
-
 #app .content p {
-  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
   margin-top: 1rem;
+  color: #666666;
+  font-size: 20px;
+  text-align: center;
 }
 .textIcon {
   position: absolute;
@@ -672,6 +673,10 @@ footer img {
   .Mission img {
     max-width: 50%;
   }
+  .vision li {
+    margin: 0;
+    padding: 0;
+  }
   .values {
     text-align: center;
   }
@@ -709,7 +714,8 @@ footer img {
   }
   #about ul li {
     text-align: center;
-    margin-right: 0;
+    margin: 1.5rem 0;
+    padding: 0;
   }
   #about ul li::marker {
     content: "";
@@ -724,7 +730,10 @@ footer img {
     grid-template-columns: repeat(1, 1fr);
   }
   .section-title {
-    margin: 3rem 0 2rem;
+    margin: 1rem 0 2rem;
+  }
+  .contact .title {
+    text-align: center;
   }
 }
 .whatsapp {
@@ -732,4 +741,28 @@ footer img {
   bottom: 10%;
   right: 21px;
   z-index: 22;
+}
+
+@media screen and (max-width: 375px) {
+  .values .container:nth-child(2) {
+    display: block;
+  }
+  .value {
+    margin: 2rem 0;
+  }
+  .services-tabs .container:nth-child(2) {
+    grid-template-columns: 1fr;
+  }
+  .footer-top {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .footer-top p {
+    margin-bottom: 1rem;
+  }
+  footer img {
+    width: 120px;
+    display: block;
+    margin: 0 auto 1rem;
+  }
 }

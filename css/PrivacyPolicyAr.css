@@ -21,6 +21,7 @@ header {
   margin-inline: auto;
   position: relative;
 }
+
 .mainDiv h1.title {
   font-weight: bold;
   font-size: 32px;
@@ -50,8 +51,20 @@ h3 {
 
 ul {
   list-style: decimal;
-  margin-left: 70px;
+  /* margin-left: 70px; */
 }
 ul .paragraph {
   margin: 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainDiv h1.title {
+    margin: 0;
+    line-height: 1.9;
+    font-size: 25px;
+  }
+  .mainDiv > div {
+    margin: 0 !important;
+    padding: 0 1.5rem;
+  }
 }
