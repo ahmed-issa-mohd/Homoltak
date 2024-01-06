@@ -98,7 +98,7 @@ document.onclick = function (e) {
 // change header
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
+  if (window.scrollY > 20) {
     header.classList.add('change');
   } else {
     header.classList.remove('change');
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dots: true,
         autoplay: true,
         autoplaySpeed: 2000,
-        rtl: true,
+        rtl: true, fade: true,
       });
       $('.app-text-slider').slick({
         arrows: false,
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dots: true,
         autoplay: 'true ',
         autoplaySpeed: 6000,
-        rtl: true,
+        rtl: true, fade: true,
       });
     } else {
       $('.showcase-slider').slick({
