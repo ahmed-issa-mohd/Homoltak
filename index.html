@@ -102,8 +102,8 @@
   <button type="button" class="btn" id="btn-back-to-top">
     <i class="fa-solid fa-circle-arrow-up fa-2xl" style="color: #00a7bd"></i>
   </button>
-  <a aria-label="Chat on WhatsApp" href="https://wa.me/962782762762" class="whatsapp" target="_blank">
-    <i class="fa-brands fa-whatsapp fa-2xl whatsapp " style="color: #1bc53d;"></i></a>
+  <!-- <a aria-label="Chat on WhatsApp" href="https://wa.me/962782762762" class="whatsapp" target="_blank">
+    <i class="fa-brands fa-whatsapp fa-2xl whatsapp " style="color: #1bc53d;"></i></a> -->
   <!-- Header -->
   <header><a>
     </a>
@@ -564,7 +564,7 @@
     <div class="container">
       <h1 class="brand" data-i18n="brand">شركة التطبيق المباشر لنقل البضائع</h1>
       <div class="wrapper animate__animated animate__bounceInRight">
-        <div class="company-info">
+        <div class="company-info" style="position: relative;">
           <h3 data-i18n="company_info_title">تواصل مع حمولتك</h3>
           <ul>
             <li><i class="fa-solid fa-road"></i>
@@ -573,6 +573,13 @@
             <li><i class="fa-solid fa-phone" data-i18n="company_info_mibile"></i> (962)77-77777</li>
             <li><i class="fa-solid fa-envelope" data-i18n="company_info_mail"></i> test@homoltak.com</li>
           </ul>
+          <div class="whatsapp">
+            <!-- <a aria-label="Chat on WhatsApp" href="https://wa.me/962782762762" class="whatsapp" target="_blank">
+              <i class="fa-brands fa-whatsapp fa-2xl whatsapp " style="color: #1bc53d;"></i></a> -->
+            <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i>
+          </div>
         </div>
         <div class="contact">
           <h3 class="title" data-i18n="title">تواصل معنا</h3>
@@ -630,7 +637,7 @@
     var typed = new Typed('#element', {
       strings: ['تطبيق <i style="color:orange">حمولتك</i> لنقل البضائع'],
       typeSpeed: 150,
-      // loop: true,
+      loop: true,
     });
   </script>
 </body>

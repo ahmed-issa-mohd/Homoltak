@@ -535,6 +535,7 @@ per {
 .company-info {
   background: #008686;
   color: #fff;
+  position: relative;
 }
 
 .company-info h3,
@@ -795,12 +796,15 @@ footer img {
   }
 }
 .whatsapp {
-  position: fixed;
-  bottom: 50%;
-  left: 5px;
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
   z-index: 22;
+  transform: translate(50%, 50%);
 }
-
+.whatsapp > * {
+  margin: 15px;
+}
 @media screen and (max-width: 375px) {
   .values .container:nth-child(2) {
     display: block;
