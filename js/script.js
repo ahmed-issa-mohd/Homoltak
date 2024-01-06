@@ -98,7 +98,7 @@ document.onclick = function (e) {
 // change header
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 30) {
+  if (window.scrollY > 50) {
     header.classList.add('change');
   } else {
     header.classList.remove('change');

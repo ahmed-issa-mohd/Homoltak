@@ -798,12 +798,17 @@ footer img {
 .whatsapp {
   position: absolute;
   bottom: 8%;
-  left: 5%;
+  left: 2%;
   z-index: 22;
   transform: translate(50%, 50%);
 }
 .whatsapp > * {
   margin: 15px;
+  transition: all 0.5s ease-in;
+}
+.whatsapp > i:hover {
+  margin: 15px;
+  color: orange !important ;
 }
 @media screen and (max-width: 375px) {
   .values .container:nth-child(2) {
