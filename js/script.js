@@ -68,6 +68,13 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
+
+// preload
+$(window).load(function () {
+  // Preloader
+  $('.loader').fadeOut();
+  $('.loader-mask').delay(350).fadeOut('slow');
+});
 // Toggle Menu
 
 
