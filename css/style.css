@@ -183,7 +183,7 @@ body {
 /* Header */
 
 header {
-  border-bottom: 2px solid #f37020;
+  /* border-bottom: 2px solid #f37020;   */
   background-color: rgb(255, 255, 255);
   top: 0;
   z-index: 100;
@@ -636,6 +636,9 @@ footer img {
   .brand {
     padding: 0;
   }
+  .menu i {
+    display: none;
+  }
 }
 
 /* Small Screen  */
@@ -659,14 +662,14 @@ footer img {
   }
   header ul {
     display: none;
-    text-align: center;
-    background: #009393;
+    background: #f4ffff;
     position: absolute;
-    width: 100%;
+    width: 286px;
     top: 48px;
     z-index: -10;
     left: 0px;
-    transition: all 10.5 linear;
+    height: 100vh;
+    right: 0;
   }
 
   .hidden {
@@ -674,17 +677,17 @@ footer img {
   }
   .showMenue {
     display: block;
+    padding-top: 2rem;
   }
   header li {
-    margin: 23px 0;
-    padding: 0 20px 10px 20px;
+    padding: 1rem;
     border-bottom: 1px solid #ccc;
   }
   header li:last-child {
     margin: 0;
   }
   header a {
-    color: #ffffff;
+    color: #000;
   }
   #about h1 {
     text-align: center;
