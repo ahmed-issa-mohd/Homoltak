@@ -58,7 +58,11 @@ const translations = {
         services_tabs_S5: 'Lifting and pulling winches',
         services_tabs_S6: 'Liquid transportation',
         contract: 'contract',
-        showcase_p1: 'Welcome to the Homoltak application. You can immediately and at any time reserve the truck and vehicle you need without any effort.'
+        showcase_p1: 'Welcome to the Homoltak application. You can immediately and at any time reserve the truck and vehicle you need without any effort.',
+        item_2_title: 'Jobs Opportunities',
+        showcase_p2: 'Providing more opportunities and creating new outlets for providers and users',
+        item_3_title: 'Moving efficiency',
+        showcase_p4: 'Modernizing the land transport sector and enabling it to provide high-quality transport services',
     },
     ar: {
         home: "الرئيسية",
@@ -118,6 +122,10 @@ const translations = {
         services_tabs_S6: 'نقل السوائل',
         contract: 'التعاقد',
         showcase_p1: 'اهلا وسهلا بك بتطبيق حمولتك يمكنك فوراً وبأي وقت كان حجز الشاحنة والمركبة التي تحتاج إليها بدون أي جهد وتعب',
+        item_2_title: 'فرص عمل',
+        showcase_p2: 'توفير مزيد من الفرص وإنشاء منافذ جديدة للمزودين والمستعملين',
+        item_3_title: 'كفاءة العمل',
+        showcase_p4: 'تحديث قطاع النقل البري وتمكينه من توفير خدمات نقل ذات جودة عالية',
     }
 };
 
