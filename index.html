@@ -111,8 +111,6 @@
   <button type="button" class="btn" id="btn-back-to-top">
     <i class="fa-solid fa-circle-arrow-up fa-2xl" style="color: #00a7bd"></i>
   </button>
-  <!-- <a aria-label="Chat on WhatsApp" href="https://wa.me/962782762762" class="whatsapp" target="_blank">
-    <i class="fa-brands fa-whatsapp fa-2xl whatsapp " style="color: #1bc53d;"></i></a> -->
   <!-- Header -->
   <header><a>
     </a>
@@ -146,13 +144,23 @@
 
   <!-- Showcase  -->
   <div class="showcase">
-    <div class="showcase-content">
-      <span id="element"></span>
-    </div>
+
     <div class="showcase-slider">
-      <div class="item item-4"></div>
-      <div class="item item-6"></div>
-      <div class="item item-3"></div>
+      <div class="item item-1">
+        <div class="showcase-content">
+          <span id="element1"></span>
+        </div>
+      </div>
+      <div class="item item-2">
+        <div class="showcase-content">
+          <span id="element2"></span>
+        </div>
+      </div>
+      <div class="item item-3">
+        <div class="showcase-content">
+          <span id="element3"></span>
+        </div>
+      </div>
     </div>
   </div>
   <!-- vision -->
@@ -587,12 +595,13 @@
             <li><i class="fa-solid fa-phone" data-i18n="company_info_mibile"></i> (962)77-77777</li>
             <li><i class="fa-solid fa-envelope" data-i18n="company_info_mail"></i> test@homoltak.com</li>
           </ul>
-          <div class="whatsapp">
-            <!-- <a aria-label="Chat on WhatsApp" href="https://wa.me/962782762762" class="whatsapp" target="_blank">
-              <i class="fa-brands fa-whatsapp fa-2xl whatsapp " style="color: #1bc53d;"></i></a> -->
-            <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
-            <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
-            <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i>
+          <div class="social-icons">
+            <!-- <a aria-label="Chat on WhatsApp" href="https://wa.me/962782762762" target="_blank">
+              <i class="fa-brands fa-whatsapp fa-2xl  " style="color: #1bc53d;"></i></a> -->
+            <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/962782762762" target="_blank"> <i
+                class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a>
           </div>
         </div>
         <div class="contact">
@@ -651,13 +660,7 @@
   <script src="js/script.js" type="module" defer></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
-    var typed = new Typed('#element', {
-      strings: ['تطبيق <i style="color:orange">حمولتك</i> لنقل البضائع'],
-      typeSpeed: 150,
-      // loop: true,
-      showCursor: false,
-      cursorChar: '|',
-    });
+
   </script>
 </body>
 

@@ -195,6 +195,7 @@ header.change {
   width: 100%;
   top: 0;
   border: 0;
+  z-index: 10000;
 }
 
 header.change #branding img {
@@ -536,6 +537,7 @@ per {
   background: #008686;
   color: #fff;
   position: relative;
+  min-height: 351px;
 }
 
 .company-info h3,
@@ -797,6 +799,12 @@ footer img {
   .contact .title {
     text-align: center;
   }
+  .contact-us .brand {
+    margin: 2rem 0;
+  }
+  .company-info {
+    padding: 1rem 0;
+  }
 }
 .whatsapp {
   position: absolute;
@@ -812,6 +820,24 @@ footer img {
 .whatsapp > i:hover {
   margin: 15px;
   color: orange !important ;
+}
+
+.social-icons {
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.social-icons > a {
+  margin: 0 0.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.social-icons > a:hover {
+  font-size: 1.3em !important;
 }
 @media screen and (max-width: 375px) {
   .values .container:nth-child(2) {
@@ -834,5 +860,19 @@ footer img {
     width: 120px;
     display: block;
     margin: 0 auto 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact form {
+    display: block;
+  }
+  .g-recaptcha {
+    margin: 0.5rem 0;
+  }
+  .company-info {
+    position: relative;
+    min-height: 351px;
+    margin-top: 10px;
   }
 }

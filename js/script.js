@@ -8,6 +8,7 @@ let menu = document.querySelector('.menu');
 let menuBtn = document.querySelector('.menu-btn');
 let faBars = document.querySelector('.fa-bars');
 let header = document.querySelector('header');
+let showcase = document.querySelector('.showcase')
 let body = document.getElementsByTagName('body')[0];
 
 
@@ -100,8 +101,11 @@ document.onclick = function (e) {
 window.addEventListener('scroll', () => {
   if (window.scrollY > 20) {
     header.classList.add('change');
+    showcase.style.top = '25px'
   } else {
     header.classList.remove('change');
+    showcase.style.top = '0px'
+
   }
 });
 
@@ -141,8 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
         arrows: true,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 2000,
-        rtl: true, fade: true,
+        autoplaySpeed: 3000,
+        rtl: true,
+        fade: true,
+        speed: 300,
       });
       $('.app-text-slider').slick({
         arrows: false,
@@ -150,15 +156,19 @@ document.addEventListener('DOMContentLoaded', () => {
         dots: true,
         autoplay: 'true ',
         autoplaySpeed: 6000,
-        rtl: true, fade: true,
+        rtl: true,
+        fade: true,
       });
     } else {
       $('.showcase-slider').slick({
         arrows: true,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         ltr: true,
+        speed: 300,
+
+
       });
       $('.app-text-slider').slick({
         arrows: false,
@@ -185,4 +195,26 @@ const setLanguage = (language) => {
 };
 
 
+// Slider Text
+var typed = new Typed('#element1', {
+  strings: ['تطبيق <i style="color:orange">حمولتك</i> لنقل البضائع'],
+  typeSpeed: 150,
+  // loop: true,
+  showCursor: false,
+  cursorChar: '|',
+});
+var typed2 = new Typed('#element2', {
+  strings: ['توفير مزيد من الفرص وإنشاء منافذ جديدة للمزودين والمستعملين'],
+  typeSpeed: 10,
+  // loop: true,
+  showCursor: false,
+  cursorChar: '|',
+});
+var typed3 = new Typed('#element3', {
+  strings: ['تحديث قطاع النقل البري وتمكينه من توفير خدمات نقل ذات جودة عالية'],
+  typeSpeed: 10,
+  // loop: true,
+  showCursor: false,
+  cursorChar: '|',
+});
 
