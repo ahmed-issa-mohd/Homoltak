@@ -203,18 +203,5 @@ var typed = new Typed('#element1', {
   showCursor: false,
   cursorChar: '|',
 });
-var typed2 = new Typed('#element2', {
-  strings: [''],
-  typeSpeed: 10,
-  // loop: true,
-  showCursor: false,
-  cursorChar: '|',
-});
-var typed3 = new Typed('#element3', {
-  strings: ['تحديث قطاع النقل البري وتمكينه من توفير خدمات نقل ذات جودة عالية'],
-  typeSpeed: 10,
-  // loop: true,
-  showCursor: false,
-  cursorChar: '|',
-});
+
 
