@@ -1,4 +1,4 @@
-import translations from '../translations.js';
+import translations from './translations.js';
 const tabItems = document.querySelectorAll('.tab-item');
 const serviceContent = document.querySelector('.service-content');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
