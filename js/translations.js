@@ -58,6 +58,7 @@ const translations = {
         services_tabs_S5: 'Lifting and pulling winches',
         services_tabs_S6: 'Liquid transportation',
         contract: 'contract',
+        showcase_p1: 'Welcome to the Homoltak application. You can immediately and at any time reserve the truck and vehicle you need without any effort.'
     },
     ar: {
         home: "الرئيسية",
@@ -116,6 +117,7 @@ const translations = {
         services_tabs_S5: 'ونشات الرفع والسحب',
         services_tabs_S6: 'نقل السوائل',
         contract: 'التعاقد',
+        showcase_p1: 'اهلا وسهلا بك بتطبيق حمولتك يمكنك فوراً وبأي وقت كان حجز الشاحنة والمركبة التي تحتاج إليها بدون أي جهد وتعب',
     }
 };
 

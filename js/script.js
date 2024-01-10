@@ -129,6 +129,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document
       .getElementById('siteLanguage')
       .querySelector("[value = 'ar']").selected = 'true';
+    var typed = new Typed('#element1', {
+      strings: [' <i style="color:orange">حمولتك</i> لنقل البضائع'],
+      typeSpeed: 150,
+      // loop: true,
+      showCursor: false,
+      cursorChar: '|',
+    });
+
   } else {
     document.dir = 'ltr';
     body.style.direction = "ltr";
@@ -137,6 +145,14 @@ document.addEventListener('DOMContentLoaded', () => {
       .querySelector("[value = 'en']").selected = 'true';
     body.style.fontFamily = "'Karla', sans-serif";
     privacLink.href = 'PrivacyPolicyEn.html';
+    var typed = new Typed('#element1', {
+      strings: [' <i style="color:orange">Homoltak</i>  For Moving Goods'],
+      typeSpeed: 150,
+      // loop: true,
+      showCursor: false,
+      cursorChar: '|',
+    });
+
   }
   setLanguage(language);
   $(document).ready(function () {
@@ -145,10 +161,9 @@ document.addEventListener('DOMContentLoaded', () => {
         arrows: true,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
         rtl: true,
         fade: true,
-        speed: 300,
       });
       $('.app-text-slider').slick({
         arrows: false,
@@ -164,11 +179,8 @@ document.addEventListener('DOMContentLoaded', () => {
         arrows: true,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
         ltr: true,
-        speed: 300,
-
-
       });
       $('.app-text-slider').slick({
         arrows: false,
@@ -196,12 +208,5 @@ const setLanguage = (language) => {
 
 
 // Slider Text
-var typed = new Typed('#element1', {
-  strings: ['تطبيق <i style="color:orange">حمولتك</i> لنقل البضائع'],
-  typeSpeed: 150,
-  // loop: true,
-  showCursor: false,
-  cursorChar: '|',
-});
 
 
