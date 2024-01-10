@@ -204,7 +204,7 @@ var typed = new Typed('#element1', {
   cursorChar: '|',
 });
 var typed2 = new Typed('#element2', {
-  strings: ['توفير مزيد من الفرص وإنشاء منافذ جديدة للمزودين والمستعملين'],
+  strings: [''],
   typeSpeed: 10,
   // loop: true,
   showCursor: false,
