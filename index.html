@@ -12,93 +12,6 @@
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <title>Welcome To HOMOLTAK</title>
-  <style>
-    .loader-mask {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #fff;
-      z-index: 99999;
-    }
-
-    .loader {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 50px;
-      height: 50px;
-      font-size: 0;
-      color: #00c9d0;
-      display: inline-block;
-      margin: -25px 0 0 -25px;
-      text-indent: -9999em;
-      -webkit-transform: translateZ(0);
-      -ms-transform: translateZ(0);
-      transform: translateZ(0);
-    }
-
-    .lead {
-      font-size: 13px;
-    }
-
-    .loader div {
-      background-color: #d9b06a;
-      display: inline-block;
-      float: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 50px;
-      height: 50px;
-      opacity: 0.5;
-      border-radius: 50%;
-      -webkit-animation: ballPulseDouble 2s ease-in-out infinite;
-      animation: ballPulseDouble 2s ease-in-out infinite;
-    }
-
-    .loader div:last-child {
-      -webkit-animation-delay: -1s;
-      animation-delay: -1s;
-    }
-
-    @-webkit-keyframes ballPulseDouble {
-
-      0%,
-      100% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-      }
-
-      50% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-
-
-    }
-
-    @keyframes ballPulseDouble {
-
-      0%,
-      100% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-      }
-
-      50% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-
-    }
-
-    .g-recaptcha {
-      /* width: 152px; */
-      /* margin: auto; */
-    }
-  </style>
 </head>
 
 <body>
@@ -115,7 +28,7 @@
   <header><a>
     </a>
     <div class="container" id="container">
-      <div id="branding"><a href="#"><img src="img/web-logo.png" alt="logo" id="logo"></a>
+      <div id="branding"><a href="index.html"><img src="img/web-logo.png" alt="logo" id="logo"></a>
       </div>
       <div class="menu-btn">
         <i class="fa-solid fa-bars fa-xl" style="color: #008686;"></i>
@@ -132,7 +45,7 @@
               data-i18n="contact">تواصل معنا</span></a></li>
         <li>
           <i class="fa-solid fa-earth-americas" style="color: #f37223; padding: 0 .5rem;"></i>
-          <select id="siteLanguage">
+          <select id="siteLanguage" style="border: 0;">
             <option value="ar" data-i18n="arabic">العربية</option>
             <option value="en" data-i18n="english">الانجليزية</option>
           </select>
@@ -333,67 +246,79 @@
     </div>
     <div class="container">
       <div id="tab-1" class="tab-item ">
-        <i class="fa-solid fa-truck fa-2x"></i>
-        <p data-i18n="services_tabs_S1">النقل بمركبة مفتوحة</p>
+        <a href="#service-content">
+          <i class="fa-solid fa-truck fa-2x"></i>
+          <p data-i18n="services_tabs_S1">النقل بمركبة مفتوحة</p>
+        </a>
       </div>
       <div id="tab-2" class="tab-item">
-        <i class="fa-solid fa-truck-pickup fa-3x"></i>
-        <p data-i18n="services_tabs_S2">النقل بمركبة مغلقة </p>
+        <a href="#service-content">
+          <i class="fa-solid fa-truck-pickup fa-3x"></i>
+          <p data-i18n="services_tabs_S2">النقل بمركبة مغلقة </p>
+        </a>
       </div>
       <div id="tab-3" class="tab-item">
-        <i class="fa-solid fa-truck-fast fa-2x"></i>
-        <p data-i18n="services_tabs_S3">النقل بمركبة مبردة</p>
+        <a href="#service-content">
+          <i class="fa-solid fa-truck-fast fa-2x"></i>
+          <p data-i18n="services_tabs_S3">النقل بمركبة مبردة</p>
+        </a>
       </div>
       <div id="tab-4" class="tab-item">
-        <i class="fa-solid fa-truck-moving fa-2x"></i>
-        <p data-i18n="services_tabs_S4">النقل بمركبة مجمدة</p>
+        <a href="#service-content">
+          <i class="fa-solid fa-truck-moving fa-2x"></i>
+          <p data-i18n="services_tabs_S4">النقل بمركبة مجمدة</p>
+        </a>
       </div>
       <div id="tab-5" class="tab-item">
-        <i class="fa-solid fa-truck-arrow-right fa-2x"></i>
-        <p data-i18n="services_tabs_S5">ونشات الرفع والسحب</p>
+        <a href="#service-content">
+          <i class="fa-solid fa-truck-arrow-right fa-2x"></i>
+          <p data-i18n="services_tabs_S5">ونشات الرفع والسحب</p>
+        </a>
       </div>
       <div id="tab-6" class="tab-item">
-        <i class="fa-solid fa-truck-droplet fa-2x"></i>
-        <p data-i18n="services_tabs_S6">نقل السوائل</p>
+        <a href="#service-content">
+          <i class="fa-solid fa-truck-droplet fa-2x"></i>
+          <p data-i18n="services_tabs_S6">نقل السوائل</p>
+        </a>
       </div>
     </div>
   </div>
   <!-- Services  -->
-  <Section class="service-content">
+  <Section class="service-content" id="service-content">
     <div class="container">
       <!-- Tab 1 -->
       <div id="tab-1-content" class="tab-content-item ">
         <div class="tab-1-content-inner">
           <ol>
             <li>
-              <p>بيك أب جوانب Cabin Double ولغاية 800 كيلو غرام. (بيك اب)</p>
+              <p data-i18n="tab1_p1"></p>
             </li>
             <li>
-              <p>بيك أب جوانب Cabin Single ولغاية 1.5 طن. (بنجو)</p>
+              <p data-i18n="tab1_p2"></p>
             </li>
             <li>
-              <p>مركبة فقط بجوانب ( مفتوحة ) ولغاية 2.5 طن (دينا)</p>
+              <p data-i18n="tab1_p3"></p>
             </li>
             <li>
-              <p>مركبة فقط بجوانب ( مفتوحة ) ولغاية 4.5 طن. ( LK )</p>
+              <p data-i18n="tab1_p4"> ( LK )</p>
             </li>
             <li>
-              <p>مركبة فقط بجوانب ( مفتوحة ) ولغاية 8 طن. ( LB )</p>
+              <p data-i18n="tab1_p5"></p>
             </li>
             <li>
-              <p>مركبة فقط بجوانب ( مفتوحة ) ولغاية 13 طن. ( Single) </p>
+              <p data-i18n="tab1_p6"> </p>
             </li>
             <li>
-              <p>تريلا فقط بجوانب ( مفتوحة ) ولغاية 25 طن. )تريلا)</p>
+              <p data-i18n="tab1_p7"></p>
             </li>
             <li>
-              <p>تريلا بدون جوانب ( مفتوحة ) ولغاية 25 طن. تريلا</p>
+              <p data-i18n="tab1_p8"></p>
             </li>
             <li>
-              <p> تريلا نقل السيارات عدد 4 . تريلا</p>
+              <p data-i18n="tab1_p9"></p>
             </li>
             <li>
-              <p> تريلا نقل السيارات عدد .7- 10 تريلا</p>
+              <p data-i18n="tab1_p10"></p>
             </li>
           </ol>
         </div>
@@ -402,75 +327,56 @@
       <div id="tab-2-content" class="tab-content-item ">
         <div class="tab-2-content-inner">
           <ol>
-
             <li>
-              <p>باص الفان ولغاية 600 كيلوغرام.
-              </p>
+              <p data-i18n="tab2_p1"></p>
             </li>
             <li>
-              <p>مركبة صغيرة مغلق ولغاية 1.5 طن.
-              </p>
+              <p data-i18n="tab2_p2"></p>
             </li>
             <li>
-              <p>مركبة صغيرة بستارة ولغاية 1.5 طن
-              </p>
+              <p data-i18n="tab2_p3"></p>
             </li>
             <li>
-              <p> مركبة صغيرة مغلق ولغاية 2.5 طن
-              </p>
+              <p data-i18n="tab2_p4"></p>
             </li>
             <li>
-              <p> مركبة صغيرة بستارة ولغاية 2.5 طن
-              </p>
+              <p data-i18n="tab2_p5"></p>
             </li>
             <li>
-              <p> مركبة ( مغلقة ) ولغاية 4.5 طن. ( LK )
-              </p>
+              <p data-i18n="tab2_p6"></p>
             </li>
             <li>
-              <p> مركبة ( بستارة ) ولغاية 4.5 طن. ( LK)
-              </p>
+              <p data-i18n="tab2_p7"></p>
             </li>
             <li>
-              <p> باص فان مغلق لغاية 2.5 طن
-              </p>
+              <p data-i18n="tab2_p8"></p>
             </li>
             <li>
-              <p> مركبة LB بصندوق مغلق ولغاية 8 طن
-              </p>
+              <p data-i18n="tab2_p9"></p>
             </li>
             <li>
-              <p> مركبة LB بصندوق مغلق ولغاية 8 طن.
-              </p>
+              <p data-i18n="tab2_p10"></p>
             </li>
             <li>
-              <p> مركبة LB بصندوق مغلق ولغاية 8 طن مزود برافعة هيدروليك.
-              </p>
+              <p data-i18n="tab2_p11"></p>
             </li>
             <li>
-              <p> مركبة فقط بستارة ولغاية 8 طن.
-              </p>
+              <p data-i18n="tab2_p12"></p>
             </li>
             <li>
-              <p> مركبة فقط بستارة ولغاية 13 طن.
-              </p>
+              <p data-i18n="tab2_p13"></p>
             </li>
             <li>
-              <p> مركبة ( مغلقة ) ولغاية 13 طن.
-              </p>
+              <p data-i18n="tab2_p14"></p>
             </li>
             <li>
-              <p> مركبة ( مغلقة ) ولغاية 13 طن
-              </p>
+              <p data-i18n="tab2_p15"></p>
             </li>
             <li>
-              <p> تريلا ستارة ولغاية 25 طن مزود برافعة هيدروليك.
-              </p>
-            </li>
+              <p data-i18n="tab2_p16"></p>
             </li>
             <li>
-              <p>تريلا مغلقة ولغاية 25 طن.
-              </p>
+              <p data-i18n="tab2_p17"></p>
             </li>
           </ol>
         </div>
@@ -480,28 +386,28 @@
         <div class="tab-3-content-inner">
           <ol>
             <li>
-              <p>باص الفان مبرد ولغاية 600 كيلوغرام.</p>
+              <p data-i18n="tab3_p1"></p>
             </li>
             <li>
-              <p>مركبة صغيرة مبردة ولغاية 1.5 طن.</p>
+              <p data-i18n="tab3_p2"></p>
             </li>
             <li>
-              <p>مركبة صغيرة مبردة ولغاية 2.5 طن</p>
+              <p data-i18n="tab3_p3"></p>
             </li>
             <li>
-              <p>مركبة ( مبردة) ولغاية 4.5 طن. ( LK )</p>
+              <p data-i18n="tab3_p4"></p>
             </li>
             <li>
-              <p>باص فان مبرد لغاية 2.5 طن</p>
+              <p data-i18n="tab3_p5"></p>
             </li>
             <li>
-              <p>مركبة LB مبردة ولغاية 8 طن.</p>
+              <p data-i18n="tab3_p6"></p>
             </li>
             <li>
-              <p>مركبة ( مبردة) ولغاية 13 طن.</p>
+              <p data-i18n="tab3_p7"></p>
             </li>
             <li>
-              <p>تريلا مبردة ولغاية 22 طن.</p>
+              <p data-i18n="tab3_p8"></p>
             </li>
           </ol>
         </div>
@@ -511,23 +417,22 @@
         <div class="tab-4-content-inner">
           <ol>
             <li>
-              <p>مركبة صغيرة مجمدة ولغاية 1.5 طن.</p>
+              <p data-i18n="tab4_p1"></p>
             </li>
             <li>
-              <p>مركبة صغيرة مجمدة ولغاية 2.5 طن</p>
+              <p data-i18n="tab4_p2"></p>
             </li>
             <li>
-              <p>مركبة ( مجمدة) ولغاية 4.5 طن. ( LK )</p>
-            </li>
-
-            <li>
-              <p>مركبة LB مجمدة ولغاية 8 طن.</p>
+              <p data-i18n="tab4_p3"></p>
             </li>
             <li>
-              <p>مركبة ( مجمدة) ولغاية 13 طن.</p>
+              <p data-i18n="tab4_p4"></p>
             </li>
             <li>
-              <p>تريلا مجمدة ولغاية 22 طن.</p>
+              <p data-i18n="tab4_p5"></p>
+            </li>
+            <li>
+              <p data-i18n="tab4_p6"></p>
             </li>
           </ol>
         </div>
@@ -537,16 +442,16 @@
         <div class="tab-5-content-inner">
           <ol>
             <li>
-              <p>ونش سحب أو رفع لغاية 4.5 طن.</p>
+              <p data-i18n="tab5_p1"></p>
             </li>
             <li>
-              <p>ونش سحب أو رفع لغاية 7 طن.</p>
+              <p data-i18n="tab5_p2"></p>
             </li>
             <li>
-              <p>ونش سحب من خلال العجلات.</p>
+              <p data-i18n="tab5_p3"></p>
             </li>
             <li>
-              <p>ونش لرفع الطوب الجاهز</p>
+              <p data-i18n="tab5_p4"></p>
             </li>
           </ol>
         </div>
@@ -556,25 +461,34 @@
         <div class="tab-6-content-inner">
           <ol>
             <li>
-              <p>الحليب</p>
+              <p data-i18n="tab6_p1"></p>
+
             </li>
             <li>
-              <p>الغاز</p>
+
+              <p data-i18n="tab6_p2"></p>
+
             </li>
             <li>
-              <p>مياه صالحة للشرب</p>
+
+              <p data-i18n="tab6_p3"></p>
+
+            <li>
+
+              <p data-i18n="tab6_p4"></p>
+
             </li>
             <li>
-              <p>مياه غير صالحة للشرب.</p>
+              <p data-i18n="tab6_p5"></p>
+
             </li>
             <li>
-              <p>صهريج الصرف الصحي</p>
+              <p data-i18n="tab6_p6"></p>
+
             </li>
             <li>
-              <p>سولار منزلي</p>
-            </li>
-            <li>
-              <p>الزيوت العادمة</p>
+              <p data-i18n="tab6_p7"></p>
+
             </li>
           </ol>
         </div>
@@ -596,9 +510,7 @@
             <li><i class="fa-solid fa-envelope" data-i18n="company_info_mail"></i> test@homoltak.com</li>
           </ul>
           <div class="social-icons">
-            <!-- <a aria-label="Chat on WhatsApp" href="https://wa.me/962782762762" target="_blank">
-              <i class="fa-brands fa-whatsapp fa-2xl  " style="color: #1bc53d;"></i></a> -->
-            <a href="https://web.facebook.com/hmoltak?mibextid=ZbWKwL&_rdc=1&_rdr"><i
+            <a href="https://web.facebook.com/hmoltak?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank"><i
                 class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
             <a href="#"> <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
             <a aria-label="Chat on WhatsApp" href="https://wa.me/962782762762" target="_blank"> <i

@@ -10,6 +10,13 @@ let faBars = document.querySelector('.fa-bars');
 let header = document.querySelector('header');
 let showcase = document.querySelector('.showcase')
 let body = document.getElementsByTagName('body')[0];
+let service_content = document.querySelector('.service-content')
+let btn_tap = document.querySelector('#btn-tap');
+
+// btn_tap.addEventListener('click', () => {
+//   service_content.classList.add('pushDown');
+//   console.log('Ahmed')
+// })
 
 
 // Select tab content item
@@ -105,24 +112,13 @@ window.addEventListener('scroll', () => {
   } else {
     header.classList.remove('change');
     showcase.style.top = '0px'
-
   }
 });
-
 // Translations
-languageSelector.addEventListener('change', (event) => {
-  setLanguage(event.target.value);
-  localStorage.setItem('lang', event.target.value);
-  location.reload();
-});
 document.addEventListener('DOMContentLoaded', () => {
+  backToTop();
   const language = localStorage.getItem('lang') || 'ar';
-
-
-
-
   if (language == 'ar') {
-
     document.dir = 'rtl';
     body.style.fontFamily = '"Cairo", sans-serif';
     privacLink.href = 'PrivacyPolicyAr.html';
@@ -158,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $(document).ready(function () {
     if (language == 'ar') {
       $('.showcase-slider').slick({
-        arrows: true,
+        arrows: false,
         dots: true,
         autoplay: true,
         autoplaySpeed: 5000,
@@ -174,9 +170,10 @@ document.addEventListener('DOMContentLoaded', () => {
         rtl: true,
         fade: true,
       });
+
     } else {
       $('.showcase-slider').slick({
-        arrows: true,
+        arrows: false,
         dots: true,
         autoplay: true,
         autoplaySpeed: 5000,
@@ -193,20 +190,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+languageSelector.addEventListener('change', (event) => {
+  setLanguage(event.target.value);
+  localStorage.setItem('lang', event.target.value);
+  location.reload();
+});
 const setLanguage = (language) => {
-
-
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach((element) => {
     const translationKey = element.getAttribute('data-i18n');
     element.textContent = translations[language][translationKey];
   });
   // document.dir = language === 'ar' ? 'rtl' : 'ltr'
-
-
 };
 
 
-// Slider Text
 
 
